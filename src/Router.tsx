@@ -1,4 +1,13 @@
 import { createHashRouter } from "react-router-dom";
+import { Layout } from "./pages/Layout";
+import { NotFound } from "./pages/NotFound";
+import { Home } from "./pages/Home";
+import { ScienceTechnology } from "./pages/ScienceTechnology";
+import { CollaborationPartners } from "./pages/CollaborationPartners";
+import { Career } from "./pages/Career";
+import { Contact } from "./pages/Contact";
+import { Imprint } from "./pages/Imprint";
+import { DataProtection } from "./pages/DataProtection";
 
 export const router = createHashRouter([
   {
@@ -34,10 +43,10 @@ export const router = createHashRouter([
         path: "/data-protection",
         element: <DataProtection />,
       },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
-  },
-  {
-    path: "*",
-    element: <NotFound />,
   },
 ]);
