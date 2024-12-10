@@ -18,6 +18,7 @@ export const Home = () => {
           <h2>Gemeinsam die Zukunft der Medizin gestalten!</h2>
           <p>Sie sind Arzt, Sportmediziner oder eine Klinik?</p>
           <p>Testen Sie unser System und teilen Sie Ihre Erfahrungen!</p>
+          <button className="contact-button">Kontaktaufnehmen</button>
         </div>
       </section>
     </div>
