@@ -12,6 +12,14 @@ export const Home = () => {
           className="jhealt-solutions-logo"
         />
       </header>
+
+      <section className="image-section">
+        <div className="text-box-image">
+          <h2>Gemeinsam die Zukunft der Medizin gestalten!</h2>
+          <p>Sie sind Arzt, Sportmediziner oder eine Klinik?</p>
+          <p>Testen Sie unser System und teilen Sie Ihre Erfahrungen!</p>
+        </div>
+      </section>
     </div>
   );
 };
