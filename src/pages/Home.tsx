@@ -19,6 +19,7 @@ export const Home = () => {
           <p>Sie sind Arzt, Sportmediziner oder eine Klinik?</p>
           <p>Testen Sie unser System und teilen Sie Ihre Erfahrungen!</p>
           <button className="contact-button">Kontaktaufnehmen</button>
+          {/*Lägg till formulär som pop up */}
         </div>
       </section>
 
