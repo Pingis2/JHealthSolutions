@@ -1,0 +1,23 @@
+@import '../mixins/fonts.scss';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+
+    .header-logo {
+        height: auto;
+        width: 200px;
+    }
+    
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        list-style: none;
+        @include main-sans-font;
+    }
+}
+
