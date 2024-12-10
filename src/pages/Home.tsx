@@ -1,6 +1,5 @@
 import logo from "../assets/logo/JHealthSolutions-logo.png";
 import "../styling/home.scss";
-import "../styling/home-tablet.scss";
 
 export const Home = () => {
   return (
@@ -18,7 +17,9 @@ export const Home = () => {
         <div className="text-box-image">
           <h2>Gemeinsam die Zukunft der Medizin gestalten!</h2>
           <p>Sie sind Arzt, Sportmediziner oder eine Klinik?</p>
-          <p>Testen Sie unser System und teilen Sie Ihre Erfahrungen!</p>
+          <p className="second-text-box-image">
+            Testen Sie unser System und teilen Sie Ihre Erfahrungen!
+          </p>
           <button className="contact-button">Kontaktaufnehmen</button>
           {/*Lägg till formulär som pop up */}
         </div>
