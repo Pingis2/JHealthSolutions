@@ -21,6 +21,17 @@ export const Home = () => {
           <button className="contact-button">Kontaktaufnehmen</button>
         </div>
       </section>
+
+      <section className="text-info-section">
+        <h2>
+          KI-gestützte Präzision - für Diagnostik, Therapieunterstützung und
+          Genesung
+        </h2>
+        <p>
+          Von der Früherkennung bis zur Rehabilitation - Innovation für
+          nachhaltige Gesundheit
+        </p>
+      </section>
     </div>
   );
 };
