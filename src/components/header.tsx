@@ -4,11 +4,13 @@ import { useEffect, useState } from 'react';
 
 export const Header = () => {
     const [menuDisplay, setMenuDisplay] = useState(true);
+    const [burgerOpen, setBurgerOpen] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth >= 768) {
                 setMenuDisplay(true);
+                setBurgerOpen(false);
             } else {
                 setMenuDisplay(false);
             }
@@ -27,6 +29,10 @@ export const Header = () => {
 
     const handleNavigation = (path: string) => {
         navigate(path);
+    }
+
+    const handleBurger = () => {
+        setBurgerOpen(!burgerOpen);
     }
 
 
@@ -55,18 +61,30 @@ export const Header = () => {
                 {!menuDisplay && (
                     <>
                         <img src="../src/assets/logo/oranta-logo.png" alt="logo of oranta" className='header-logo'></img>
-                        <nav className='hidden burger-menu'>
-                            <ul className="nav-items">
-                                <li onClick={() => handleNavigation('/')}>Home</li>
-                                <li onClick={() => handleNavigation('/science-technology')}>Science & Technology</li>
-                                <li onClick={() => handleNavigation('/collaboration-partners')}>Collaboration Partners</li>
-                                <li onClick={() => handleNavigation('/career')}>Career</li>
-                                <li onClick={() => handleNavigation('/contact')}>Contact</li>
-                                <li>
-                                    <img src='../src/assets/icons/uk-flag-icon.png' alt='icon of the uk flag' className='language-icon' />
-                                </li>
-                            </ul>
-                        </nav>
+                            <div className='burger' onClick={handleBurger}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                        </div>
+                        {burgerOpen && (
+                            <>
+                                <div className='burger-menu'>
+                                    <nav className=''>
+                                        <ul className="nav-items">
+                                            <li onClick={() => handleNavigation('/')}>Home</li>
+                                            <li onClick={() => handleNavigation('/science-technology')}>Science & Technology</li>
+                                            <li onClick={() => handleNavigation('/collaboration-partners')}>Collaboration Partners</li>
+                                            <li onClick={() => handleNavigation('/career')}>Career</li>
+                                            <li onClick={() => handleNavigation('/contact')}>Contact</li>
+                                            <li>
+                                                <img src='../src/assets/icons/uk-flag-icon.png' alt='icon of the uk flag' className='language-icon' />
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </>
+                        )}
+                        
                     </>
                 )}
                 
