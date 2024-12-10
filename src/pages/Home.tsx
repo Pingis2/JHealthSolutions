@@ -1,5 +1,6 @@
 import logo from "../assets/logo/JHealthSolutions-logo.png";
 import "../styling/home.scss";
+import "../styling/home-tablet.scss";
 
 export const Home = () => {
   return (
