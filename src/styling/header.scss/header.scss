@@ -1,0 +1,23 @@
+@import './header-mobile.scss';
+
+
+
+@media (min-width: 768px ) {
+    @import './header-tablet.scss';
+
+    .burger-menu {
+        display: block;
+    }
+
+    .header .nav-items {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    @import './header-desktop.scss';
+
+    .burger-menu {
+        display: none;
+    }
+}
