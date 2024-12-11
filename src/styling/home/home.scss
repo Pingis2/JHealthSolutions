@@ -1,5 +1,7 @@
-@use "./mixins/colors" as *;
-@use "./mixins/fonts" as *;
+@import "../mixins/colors.scss";
+@import "../mixins/fonts.scss";
+@import "../home/home-tablet.scss";
+@import "../home/home-desktop.scss";
 
 .home-container {
   display: flex;
@@ -13,6 +15,7 @@
     color: white;
     height: 60px;
     width: 100%;
+    margin: 0 50px 0 0;
 
     @include main-green-color;
     @include main-sans-font;
@@ -32,7 +35,7 @@
 
   .image-section {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-image: url("../assets/images/home-page/home-page-image.png");
     background-size: cover;
     background-position: center;
@@ -102,6 +105,3 @@
     }
   }
 }
-
-@import "../styling/home-tablet.scss";
-@import "../styling/home-desktop.scss";
