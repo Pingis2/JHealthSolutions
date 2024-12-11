@@ -40,16 +40,28 @@
 
 .profiles {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     margin: 50px 0 0 0;
     gap: 40px;
+
+    .profile-jessica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-dmytro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     img {
         border-radius: 20px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         height: auto;
-        width: 100px;
+        width: 200px;
     }
 
     .info-text {

@@ -47,6 +47,8 @@
     img {
         border-radius: 20px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        height: auto;
+        width: 400px;
     }
 
     .info-text {
@@ -63,6 +65,7 @@
             margin: 5px;
             @include main-sans-font;
             font-weight: bold;
+            font-size: 1.4rem;
         }
     }
     
