@@ -1,0 +1,29 @@
+@media (min-width: 840px) {
+  .home-container {
+    .image-section {
+      .text-box-image {
+        margin-top: 245px;
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .text-info-section {
+      margin-top: 145px !important;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
