@@ -31,14 +31,17 @@ export const Career = () => {
 
         <div className="text-section">
           <h2>Werde Teil unseres innovativen Teams!</h2>
-          <p>
+          <p className="first-text">
             Du möchtest die Zukunft aktiv mitgestalten und gemeinsam mit uns
             Großes erreichen? Dann bist du bei uns genau richtig! Wir suchen
             leidenschaftliche Mitstreiter, die mit uns neue Wege gehen. Sei
             dabei und bringe deine Expertise ein, um mit uns etwas Einzigartiges
             zu schaffen!
           </p>
-          <p>Wir freuen uns über deine Initiativbewerbung in den Bereichen:</p>
+          <p>
+            Wir freuen uns über deine <strong>Initiativbewerbung</strong> in den
+            Bereichen:
+          </p>
 
           <h3>Mediziner (m/w/d):</h3>
           <ul>
