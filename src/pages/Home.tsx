@@ -1,6 +1,3 @@
-import logo from "../assets/logo/JHealthSolutions-logo.png";
-import "../styling/home.scss";
-
 export const Home = () => {
   return (
     <div className="home-container">
@@ -38,5 +35,3 @@ export const Home = () => {
     </div>
   );
 };
-
-export default Home;
