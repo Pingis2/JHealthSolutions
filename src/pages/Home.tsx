@@ -1,3 +1,6 @@
+import logo from "../assets/logo/JHealthSolutions-logo.png";
+import { Header } from "../components/header";
+
 export const Home = () => {
   return (
     <div className="home-container">
@@ -9,6 +12,8 @@ export const Home = () => {
           className="jhealt-solutions-logo"
         />
       </header>
+
+      <Header />
 
       <section className="image-section">
         <div className="text-box-image">
@@ -35,3 +40,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;
