@@ -1,2 +1,14 @@
 @import './header.scss/header.scss';
 @import './collaboration-partners/collaboration-partners.scss';
+@import "./header.scss/header.scss";
+@import "./home.scss";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
