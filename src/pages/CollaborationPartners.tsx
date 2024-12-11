@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Header } from "../components/header";
+import JessicaImage from '../assets/images/collaboration-partners/jessica-image.png';
+import DmytroImage from '../assets/images/collaboration-partners/dmytro-image.png';
 
 export const CollaborationPartners = () => {
   const navigate = useNavigate();
@@ -18,7 +20,7 @@ export const CollaborationPartners = () => {
 
     <div className="profiles">
       <section className="profile-jessica">
-        <img src="../src/assets/images/collaboration-partners/jessica-image.png" alt="image of Jessica Bräun" loading="lazy"></img>
+        <img src={JessicaImage} alt="image of Jessica Bräun" loading="lazy"></img>
         <div className="info-text">
           <h1>Jessica Bräun</h1>
           <h3>Dipl. Ing. (FH) Biotechnologie</h3>
@@ -27,7 +29,7 @@ export const CollaborationPartners = () => {
       </section>
 
       <section className="profile-dmytro">
-        <img src="../src/assets/images/collaboration-partners/dmytro-image.png" alt="image of Jessica Bräun" loading="lazy"></img>
+        <img src={DmytroImage} alt="image of Jessica Bräun" loading="lazy"></img>
         <div className="info-text">
           <h1>Dmytro Vakulenko</h1>
           <h3>Prof. Dr. Biological Sciences</h3>
