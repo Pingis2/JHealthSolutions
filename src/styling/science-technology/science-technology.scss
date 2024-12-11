@@ -38,7 +38,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  //   height: calc(100vh - 120px);
   margin-top: 40px;
 
   .science-technology-image {
@@ -46,3 +45,5 @@
     height: auto;
   }
 }
+
+@import "../science-technology/science-technology-desktop.scss";
