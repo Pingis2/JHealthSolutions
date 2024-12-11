@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import '../assets/logo/oranta-logo.png';
 import { useEffect, useState } from 'react';
+import OrantaLogo from '../assets/logo/oranta-logo.png';
+import UKFlagIcon from '../assets/icons/uk-flag-icon.png';
 
 export const Header = () => {
     const [menuDisplay, setMenuDisplay] = useState(true);
@@ -42,7 +44,7 @@ export const Header = () => {
             <header className='header'>
                 {menuDisplay && (
                     <>
-                        <img src="../src/assets/logo/oranta-logo.png" alt="logo of oranta" className='header-logo'></img>
+                        <img src={OrantaLogo} alt="logo of oranta" className='header-logo'></img>
                         <nav>
                             <ul className="nav-items">
                                 <li onClick={() => handleNavigation('/')}>Home</li>
@@ -51,7 +53,7 @@ export const Header = () => {
                                 <li onClick={() => handleNavigation('/career')}>Career</li>
                                 <li onClick={() => handleNavigation('/contact')}>Contact</li>
                                 <li>
-                                    <img src='../src/assets/icons/uk-flag-icon.png' alt='icon of the uk flag' className='language-icon' />
+                                    <img src={UKFlagIcon} alt='icon of the uk flag' className='language-icon' />
                                 </li>
                             </ul>
                             </nav>
@@ -60,7 +62,7 @@ export const Header = () => {
                 
                 {!menuDisplay && (
                     <>
-                        <img src="../src/assets/logo/oranta-logo.png" alt="logo of oranta" className='header-logo'></img>
+                        <img src={OrantaLogo} alt="logo of oranta" className='header-logo'></img>
                             <div className='burger' onClick={handleBurger}>
                                 <span></span>
                                 <span></span>
@@ -77,7 +79,7 @@ export const Header = () => {
                                             <li onClick={() => handleNavigation('/career')}>Career</li>
                                             <li onClick={() => handleNavigation('/contact')}>Contact</li>
                                             <li>
-                                                <img src='../src/assets/icons/uk-flag-icon.png' alt='icon of the uk flag' className='language-icon' />
+                                                <img src={UKFlagIcon} alt='icon of the uk flag' className='language-icon' />
                                             </li>
                                         </ul>
                                     </nav>
