@@ -13,7 +13,7 @@
     @include main-sans-font;
 
     .home {
-        margin: 0 0 0 100px;
+        margin: 0 0 0 10px;
         cursor: pointer;
         transition: color 0.2s ease-in;
     }
@@ -23,7 +23,7 @@
     }
 
     .page-name {
-        margin: 0 100px 0 0;
+        margin: 0 10px 0 0;
     }
 
     p {
@@ -40,15 +40,28 @@
 
 .profiles {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
+    gap: 40px;
+
+    .profile-jessica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-dmytro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     img {
         border-radius: 20px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         height: auto;
-        width: 400px;
+        width: 200px;
     }
 
     .info-text {
@@ -57,17 +70,16 @@
         h1 {
             @include main-sans-font;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.2rem;
             margin: 25px 0 0 0;
         }
-    
+
         h3 {
             margin: 5px;
             @include main-sans-font;
             font-weight: bold;
-            font-size: 1.4rem;
+            font-size: 1rem;
         }
     }
-    
-}
 
+}

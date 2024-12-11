@@ -1,0 +1,9 @@
+@import './collaborations-partners-mobile.scss';
+
+@media (min-width: 768px) {
+    @import './collaborations-partners-tablet.scss';
+}
+
+@media (min-width: 1024px) {
+    @import './collaborations-partners-desktop.scss';
+}
