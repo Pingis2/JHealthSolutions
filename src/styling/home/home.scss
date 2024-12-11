@@ -1,5 +1,7 @@
-@use "./mixins/colors" as *;
-@use "./mixins/fonts" as *;
+@import "../mixins/colors.scss";
+@import "../mixins/fonts.scss";
+@import "../home/home-tablet.scss";
+@import "../home/home-desktop.scss";
 
 .home-container {
   display: flex;
@@ -102,6 +104,3 @@
     }
   }
 }
-
-@import "../styling/home-tablet.scss";
-@import "../styling/home-desktop.scss";
