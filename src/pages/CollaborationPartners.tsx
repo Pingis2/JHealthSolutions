@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Header } from "../components/header";
 
 export const CollaborationPartners = () => {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ export const CollaborationPartners = () => {
       <p onClick={() => handleNavigation('/')} className="home">Home</p>
       <p className="page-name">Collaboration Partners</p>
     </header>
+    <Header></Header>
 
     <div className="profiles">
       <section className="profile-jessica">
