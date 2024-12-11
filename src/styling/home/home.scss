@@ -15,6 +15,7 @@
     color: white;
     height: 60px;
     width: 100%;
+    margin: 0 50px 0 0;
 
     @include main-green-color;
     @include main-sans-font;
@@ -34,7 +35,7 @@
 
   .image-section {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-image: url("../assets/images/home-page/home-page-image.png");
     background-size: cover;
     background-position: center;

@@ -1,5 +1,19 @@
+import { useNavigate } from "react-router-dom";
+
 export const CollaborationPartners = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path: string) => {
+    navigate(path);
+  }
+  
   return <>
+  
+    <header className="home-header">
+      <p onClick={() => handleNavigation('/')} className="home">Home</p>
+      <p className="page-name">Collaboration Partners</p>
+    </header>
+
     <div className="profiles">
       <section className="profile-jessica">
         <img src="../src/assets/images/collaboration-partners/jessica-image.png" alt="image of Jessica Bräun" loading="lazy"></img>

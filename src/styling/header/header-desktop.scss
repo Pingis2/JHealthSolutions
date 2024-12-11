@@ -11,6 +11,7 @@
     .header-logo {
         height: auto;
         width: 200px;
+        margin: 0 0 0 100px;
     }
     
     .nav-items {
@@ -22,6 +23,7 @@
         @include main-sans-font;
         cursor: pointer;
         @include black-text-coolor;
+        margin: 0 100px 0 0;
         
         li {
             transition: color 0.2s ease-in;
