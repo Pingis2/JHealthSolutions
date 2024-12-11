@@ -1,5 +1,9 @@
+import { Header } from "../components/header";
+
 export const ScienceTechnology = () => {
-  return <>Science & Technology</>;
+  return <>
+    <Header></Header>
+  </>;
 };
 
 export default ScienceTechnology;

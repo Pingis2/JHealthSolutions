@@ -1,5 +1,9 @@
+import { Header } from "../components/header";
+
 export const Career = () => {
-  return <>Career</>;
+  return <>
+    <Header></Header>
+  </>;
 };
 
 export default Career;

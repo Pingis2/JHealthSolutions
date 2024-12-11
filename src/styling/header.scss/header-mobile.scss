@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+
+    .header-logo {
+        height: auto;
+        width: 130px;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        span {
+            width: 30px;
+            height: 5px;
+            background-color: black;
+            border-radius: 10px;
+        }
+    }
+
+    .burger-menu {
+        width: 200px;
+        height: auto;
+        background-color: green;
+        position: absolute;
+        top: 100px;
+        right: 10px;
+
+        .nav-items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        
+            li {
+                list-style: none;
+                text-align: left;
+            }
+        }
+
+    }
+
+}
+
+.hidden {
+    display: none;
+}

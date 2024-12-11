@@ -1,5 +1,9 @@
+import { Header } from "../components/header";
+
 export const CollaborationPartners = () => {
-  return <>Collaboration Partners</>;
+  return <>
+    <Header></Header>
+  </>;
 };
 
 export default CollaborationPartners;

@@ -1,0 +1,40 @@
+@import '../mixins/fonts.scss';
+@import '../mixins/colors.scss';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+
+    .header-logo {
+        height: auto;
+        width: 200px;
+    }
+    
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+        @include main-sans-font;
+        cursor: pointer;
+        @include black-text-coolor;
+        
+        li {
+            transition: color 0.2s ease-in;
+        }
+
+        li:hover {
+            color: #5bbe9b;
+        }
+
+        .language-icon {
+            height: auto;
+            width: 30px;
+        }
+    }
+}
+
