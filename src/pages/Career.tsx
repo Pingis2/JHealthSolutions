@@ -27,6 +27,7 @@ export const Career = () => {
       <section className="image-text-section">
         <div className="image-container">
           <img src={careerImage} alt="Career Image" className="career-image" />
+          <div className="text-overlay">Teil des Teams</div>
         </div>
 
         <div className="text-section">
