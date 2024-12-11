@@ -8,6 +8,7 @@
   justify-content: center;
 
   @include main-green-color;
+  @include main-sans-font;
 
   .header-content {
     width: 100%;
