@@ -1,0 +1,48 @@
+@use "../mixins/fonts.scss" as *;
+@use "../mixins/colors.scss" as *;
+
+.green-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include main-green-color;
+
+  .header-content {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .header-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+    align-items: center;
+    margin: 15px;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .home-link {
+    cursor: pointer;
+  }
+
+  .home-link:hover {
+    text-decoration: underline;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   height: calc(100vh - 120px);
+  margin-top: 40px;
+
+  .science-technology-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
