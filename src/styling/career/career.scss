@@ -42,9 +42,11 @@
   justify-content: center;
 
   .image-container {
+    position: relative;
     width: 100%;
     max-width: 800px;
     height: auto;
+    margin-top: 10px;
   }
 
   .career-image {
@@ -52,6 +54,20 @@
     height: auto;
     object-fit: cover;
     margin-bottom: 20px;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 90%;
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+
+    @include main-sans-font;
   }
 
   .text-section {
@@ -95,6 +111,14 @@
 
     li {
       padding-right: 15px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .image-text-section {
+    .text-overlay {
+      font-size: 5rem;
     }
   }
 }
