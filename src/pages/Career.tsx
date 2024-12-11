@@ -38,7 +38,7 @@ export const Career = () => {
             dabei und bringe deine Expertise ein, um mit uns etwas Einzigartiges
             zu schaffen!
           </p>
-          <p>
+          <p className="second-text">
             Wir freuen uns über deine <strong>Initiativbewerbung</strong> in den
             Bereichen:
           </p>
@@ -71,12 +71,12 @@ export const Career = () => {
             </li>
           </ul>
 
-          <p>
+          <p className="third-text">
             So bewirbst du dich: <br /> Sende uns deine Initiativbewerbung mit
             Lebenslauf und einem kurzen Motivationsschreiben an <br />
             jhealthsolutions.hd@gmail.com.
           </p>
-          <p>
+          <p className="fourth-text">
             Wir freuen uns darauf, dich kennenzulernen und gemeinsam Großes zu
             bewegen!
           </p>

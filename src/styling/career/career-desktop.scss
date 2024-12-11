@@ -1,0 +1,65 @@
+@media (min-width: 1024px) {
+  .image-text-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh - 175px);
+
+    .image-container {
+      width: 45%;
+      height: 100%;
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+
+    .career-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .text-section {
+      width: 55%;
+      margin-left: 20px;
+      margin-right: 15px;
+      text-align: left;
+      max-height: calc(100vh - 175px);
+      overflow-y: auto;
+
+      ul {
+        margin-left: -12px;
+      }
+
+      p {
+        margin-left: -12px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .text-section {
+    margin-top: 30px;
+
+    .second-text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 22px;
+    }
+
+    .third-text {
+      margin-top: 35px;
+    }
+
+    .fourth-text {
+      margin-top: 22px;
+    }
+  }
+}
