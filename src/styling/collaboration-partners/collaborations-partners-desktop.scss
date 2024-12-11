@@ -1,0 +1,27 @@
+@import '../mixins/fonts.scss';
+
+.profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px 0 0 0;
+
+    img {
+        border-radius: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    h1 {
+        @include main-sans-font;
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 25px 0 0 0;
+    }
+
+    h3 {
+        margin: 5px;
+        @include main-sans-font;
+        font-weight: bold;
+    }
+}
+
