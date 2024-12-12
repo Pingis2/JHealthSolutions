@@ -1,16 +1,25 @@
 import { Header } from "../components/header"
-import logo from "../assets/logo/JHealthSolutions-logo.png";
 import image from '../assets/images/contact/contact-image.png';
+import { useNavigate } from "react-router-dom";
 
 export const Privacy = () => {
+
+  const navigate = useNavigate();
+
+  const handleNavigation = (path: string) => {
+    navigate(path);
+  };
+
   return <>
-    <header className="home-header">
-      <p>JHealthSolutions</p>
-      <img
-        src={logo}
-        alt="JHealthSolutions logo"
-        className="jhealt-solutions-logo"
-      />
+    <header className="green-header">
+      <div className="header-content">
+        <ul className="header-list">
+          <li onClick={() => handleNavigation("/")} className="home-link">
+            Home
+          </li>
+          <li className="page-title">Contact</li>
+        </ul>
+      </div>
     </header>
     <Header></Header>
     <img src={image} alt="" className="background-image"></img>
@@ -44,14 +53,14 @@ export const Privacy = () => {
           Ihre personenbezogenen Daten werden von uns weder verkauft noch an Dritte weitergegeben.<br></br>
           5. Ihre Rechte<br></br>
           Sie haben das Recht:<br></br>
-          Auskunft über die von uns verarbeiteten personenbezogenen Daten zu erhalten (Art. 15 DSGVO),
-          die Berichtigung unrichtiger Daten zu verlangen (Art. 16 DSGVO),
-          die Löschung Ihrer Daten zu verlangen (Art. 17 DSGVO),
-          der Verarbeitung Ihrer Daten zu widersprechen (Art. 21 DSGVO),
-          eine Einschränkung der Verarbeitung zu verlangen (Art. 18 DSGVO),
-          Ihre Einwilligung zur Datenverarbeitung jederzeit zu widerrufen (Art. 7 Abs. 3 DSGVO).
+          Auskunft über die von uns verarbeiteten personenbezogenen Daten zu erhalten (Art. 15 DSGVO),<br></br>
+          die Berichtigung unrichtiger Daten zu verlangen (Art. 16 DSGVO),<br></br>
+          die Löschung Ihrer Daten zu verlangen (Art. 17 DSGVO),<br></br>
+          der Verarbeitung Ihrer Daten zu widersprechen (Art. 21 DSGVO),<br></br>
+          eine Einschränkung der Verarbeitung zu verlangen (Art. 18 DSGVO),<br></br>
+          Ihre Einwilligung zur Datenverarbeitung jederzeit zu widerrufen (Art. 7 Abs. 3 DSGVO).<br></br>
           Zur Ausübung dieser Rechte können Sie uns jederzeit unter den oben angegebenen Kontaktdaten erreichen.<br></br>
-          6. Änderungen dieser Datenschutzerklärung
+          6. Änderungen dieser Datenschutzerklärung<br></br>
           Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an geänderte rechtliche Rahmenbedingungen anzupassen. Die aktuelle Version ist jederzeit auf unserer Website verfügbar.
           Stand: Dezember, 2024
         </p>

@@ -1,7 +1,7 @@
 @use '../mixins/colors.scss' as *;
 @use '../mixins/fonts.scss' as *;
 
-@media (min-width: 1024px ) {
+@media (min-width: 768px) {
     .green-header {
         height: 60px;
         display: flex;
@@ -48,14 +48,15 @@
 
     .texts {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         @include main-sans-font;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         justify-content: space-around;
 
         .text-1 {
-            width: 45%;
+            width: 90%;
             height: auto;
+            margin: 0 auto 0 auto;
 
             h3 {
                 font-weight: bold;
@@ -63,8 +64,9 @@
         }
 
         .text-2 {
-            width: 45%;
+            width: 90%;
             height: auto;
+            margin: 0 auto 0 auto;
         }
     }
 }
