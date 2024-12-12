@@ -1,0 +1,59 @@
+@use "../mixins/fonts.scss" as *;
+@use "../mixins/colors.scss" as *;
+
+.not-found-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .green-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include main-green-color;
+    @include main-sans-font;
+
+    .header-content {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .header-list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      color: white;
+      align-items: center;
+      margin: 15px;
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    .home-link {
+      cursor: pointer;
+    }
+
+    .home-link:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+
+    .not-found-image {
+      width: 100%;
+      height: auto;
+      max-width: 80vw;
+      max-height: 70vh;
+      //   max-height: 500px;
+      object-fit: contain;
+    }
+  }
+}
