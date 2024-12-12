@@ -29,7 +29,13 @@ export const Contact = () => {
         style={{
           backgroundImage: `url(${contactImage})`,
         }}
-      ></div>
+      >
+        <div className="text-container">
+          <h1>Kontakt</h1>
+          <h2>Bitte senden Sie uns Ihre Nachricht an</h2>
+          <p>jhealthsolutions.hd@gmail.com</p>
+        </div>
+      </div>
     </div>
   );
 };
