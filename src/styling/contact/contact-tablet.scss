@@ -1,0 +1,38 @@
+@media (min-width: 650px) {
+  .contact-page {
+    .background-image {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      grid-template-columns: 1fr;
+      align-items: start;
+      height: calc(100vh - 120px);
+      .text-container {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        align-items: start;
+        margin-top: 0;
+
+        h1 {
+          justify-self: start;
+          align-self: start;
+          font-size: 1.6rem;
+          margin-top: 50px;
+          margin-left: 60px;
+        }
+
+        h2 {
+          justify-self: start;
+          font-size: 1.6rem;
+          margin-left: 60px;
+        }
+
+        p {
+          justify-self: center;
+          font-size: 2.25rem;
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+}
