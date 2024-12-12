@@ -1,63 +1,65 @@
-@import '../mixins/fonts.scss';
-@import '../mixins/colors.scss';
+@use '../mixins/colors.scss' as *;
+@use '../mixins/fonts.scss' as *;
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
+@media (min-width: 1024px) {
 
-    .header-logo {
-        height: auto;
-        width: 200px;
-        margin: 0 0 0 100px;
-    }
-    
-    .nav-items {
+    .header {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
         align-items: center;
-        gap: 20px;
-        list-style: none;
-        @include main-sans-font;
-        cursor: pointer;
-        @include black-text-coolor;
-        margin: 0 100px 0 0;
-        
-        li {
-            transition: color 0.2s ease-in;
-            padding: 0 10px;
-            font-size: 1rem;
-            position: relative;
-            display: flex;
-            align-items: center;
 
-            &::after {
-                content: "";
-                background: rgba(0, 0, 0, 0.2);
-                position: absolute;
-                margin: auto;
-                right: -15px;
-                top: 0;
-                bottom: 0;
-                height: 20px;
-                width: 1px;
-            }
-
-            &:last-child::after {
-                content: none;
-            }
-        }
-
-        li:hover {
-            color: #5bbe9b;
-        }
-
-        .language-icon {
+        .header-logo {
             height: auto;
-            width: 30px;
+            width: 200px;
+            margin: 0 0 0 8%;
+        }
+
+        .nav-items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+            @include main-sans-font;
+            cursor: pointer;
+            @include black-text-coolor;
+            margin: 0 100px 0 0;
+
+            li {
+                transition: color 0.2s ease-in;
+                padding: 0 10px;
+                font-size: 1rem;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                &::after {
+                    content: "";
+                    background: rgba(0, 0, 0, 0.2);
+                    position: absolute;
+                    margin: auto;
+                    right: -15px;
+                    top: 0;
+                    bottom: 0;
+                    height: 20px;
+                    width: 1px;
+                }
+
+                &:last-child::after {
+                    content: none;
+                }
+            }
+
+            li:hover {
+                color: #5bbe9b;
+            }
+
+            .language-icon {
+                height: auto;
+                width: 30px;
+            }
         }
     }
 }
-

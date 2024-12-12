@@ -36,11 +36,11 @@ export const router = createHashRouter([
         element: <Contact />,
       },
       {
-        path: "/imprint",
+        path: "/about-us",
         element: <Imprint />,
       },
       {
-        path: "/data-protection",
+        path: "/privacy",
         element: <DataProtection />,
       },
       {
