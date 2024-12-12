@@ -1,85 +1,81 @@
-@use '../mixins/fonts.scss' as *;
-@use '../mixins/colors.scss' as *;
+@use "../mixins/fonts.scss" as *;
+@use "../mixins/colors.scss" as *;
 
-.home-header {
+.green-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include main-green-color;
+  @include main-sans-font;
+
+  .header-content {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .header-list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    list-style: none;
     color: white;
-    height: 60px;
-    width: 100%;
+    align-items: center;
+    margin: 15px;
+    padding: 0;
+    font-size: 1rem;
+  }
 
-    @include main-green-color;
-    @include main-sans-font;
+  .home-link {
+    cursor: pointer;
+  }
 
-    .home {
-        margin: 0 0 0 10px;
-        cursor: pointer;
-        transition: color 0.2s ease-in;
-    }
-
-    .home:hover {
-        color: black;
-    }
-
-    .page-name {
-        margin: 0 10px 0 0;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-
-    img {
-        margin-left: 8px;
-        max-height: 20px;
-        max-width: 20px;
-        margin-right: 7px;
-    }
+  .home-link:hover {
+    text-decoration: underline;
+  }
 }
 
 .profiles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 50px 0 0 0;
+  gap: 40px;
+
+  .profile-jessica {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin: 50px 0 0 0;
-    gap: 40px;
+    align-items: center;
+  }
 
-    .profile-jessica {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .profile-dmytro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: auto;
+    width: 200px;
+  }
+
+  .info-text {
+    text-align: center;
+
+    h1 {
+      @include main-sans-font;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 25px 0 0 0;
     }
 
-    .profile-dmytro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    h3 {
+      margin: 5px;
+      @include main-sans-font;
+      font-weight: bold;
+      font-size: 1rem;
     }
-
-    img {
-        border-radius: 20px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        height: auto;
-        width: 200px;
-    }
-
-    .info-text {
-        text-align: center;
-
-        h1 {
-            @include main-sans-font;
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin: 25px 0 0 0;
-        }
-
-        h3 {
-            margin: 5px;
-            @include main-sans-font;
-            font-weight: bold;
-            font-size: 1rem;
-        }
-    }
-
+  }
 }
