@@ -1,0 +1,13 @@
+@media (min-width: 1024px) {
+  .contact-page {
+    .background-image {
+      height: calc(100vh - 160px);
+
+      .text-container {
+        p {
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}
