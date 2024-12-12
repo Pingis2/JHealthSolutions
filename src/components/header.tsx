@@ -10,7 +10,7 @@ export const Header = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth >= 1024) {
                 setMenuDisplay(true);
                 setBurgerOpen(false);
             } else {
