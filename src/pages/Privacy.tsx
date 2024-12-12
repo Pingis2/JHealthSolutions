@@ -17,7 +17,7 @@ export const Privacy = () => {
           <li onClick={() => handleNavigation("/")} className="home-link">
             Home
           </li>
-          <li className="page-title">Contact</li>
+          <li className="page-title">Privacy</li>
         </ul>
       </div>
     </header>
