@@ -1,10 +1,9 @@
 @use './header/header.scss' as *;
-@import "./header/header.scss";
-@import "./collaboration-partners/collaborations-partners.scss";
-@import "./home/home.scss";
-@import "./science-technology/science-technology.scss";
-@import "./career/career.scss";
-@import "./contact/contact.scss";
+@use "./collaboration-partners/collaborations-partners.scss" as *;
+@use "./home/home.scss" as *;
+@use "./science-technology/science-technology.scss" as *;
+@use "./career/career.scss" as *;
+@use "./contact/contact.scss" as *;
 
 html {
   margin: 0;
