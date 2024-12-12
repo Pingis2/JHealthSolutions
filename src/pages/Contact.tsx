@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Header } from "../components/header";
+import contactImage from "../assets/images/contact/contact-image.png";
 
 export const Contact = () => {
   const navigate = useNavigate();
@@ -9,7 +10,7 @@ export const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="contact-page">
       <header className="green-header">
         <div className="header-content">
           <ul className="header-list">
@@ -23,7 +24,12 @@ export const Contact = () => {
 
       <Header></Header>
 
-      <div className="background-image"></div>
+      <div
+        className="background-image"
+        style={{
+          backgroundImage: `url(${contactImage})`,
+        }}
+      ></div>
     </div>
   );
 };

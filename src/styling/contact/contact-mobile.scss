@@ -1,36 +1,49 @@
 @use "../mixins/fonts.scss" as *;
 @use "../mixins/colors.scss" as *;
 
-.green-header {
-  height: 60px;
+.contact-page {
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 
-  @include main-green-color;
-  @include main-sans-font;
-
-  .header-content {
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  .header-list {
+  .green-header {
+    height: 60px;
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    color: white;
     align-items: center;
-    margin: 15px;
-    padding: 0;
-    font-size: 1rem;
+    justify-content: center;
+
+    @include main-green-color;
+    @include main-sans-font;
+
+    .header-content {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .header-list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      color: white;
+      align-items: center;
+      margin: 15px;
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    .home-link {
+      cursor: pointer;
+    }
+
+    .home-link:hover {
+      text-decoration: underline;
+    }
   }
 
-  .home-link {
-    cursor: pointer;
-  }
-
-  .home-link:hover {
-    text-decoration: underline;
+  .background-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
