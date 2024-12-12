@@ -10,7 +10,7 @@ export const Header = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth >= 1024) {
                 setMenuDisplay(true);
                 setBurgerOpen(false);
             } else {
@@ -52,6 +52,8 @@ export const Header = () => {
                                 <li onClick={() => handleNavigation('/collaboration-partners')}>Collaboration Partners</li>
                                 <li onClick={() => handleNavigation('/career')}>Career</li>
                                 <li onClick={() => handleNavigation('/contact')}>Contact</li>
+                                <li onClick={() => handleNavigation('/privacy')}>Privacy</li>
+                                <li onClick={() => handleNavigation('/about-us')}>About us</li>
                                 <li>
                                     <img src={UKFlagIcon} alt='icon of the uk flag' className='language-icon' />
                                 </li>
@@ -63,7 +65,7 @@ export const Header = () => {
                 {!menuDisplay && (
                     <>
                         <img src={OrantaLogo} alt="logo of oranta" className='header-logo'></img>
-                            <div className='burger' onClick={handleBurger}>
+                        <div className='burger' onClick={handleBurger}>
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -71,13 +73,15 @@ export const Header = () => {
                         {burgerOpen && (
                             <>
                                 <div className='burger-menu'>
-                                    <nav className=''>
+                                    <nav>
                                         <ul className="nav-items">
                                             <li onClick={() => handleNavigation('/')}>Home</li>
                                             <li onClick={() => handleNavigation('/science-technology')}>Science & Technology</li>
                                             <li onClick={() => handleNavigation('/collaboration-partners')}>Collaboration Partners</li>
                                             <li onClick={() => handleNavigation('/career')}>Career</li>
                                             <li onClick={() => handleNavigation('/contact')}>Contact</li>
+                                            <li onClick={() => handleNavigation('/privacy')}>Privacy</li>
+                                            <li onClick={() => handleNavigation('/about-us')}>About us</li>
                                             <li>
                                                 <img src={UKFlagIcon} alt='icon of the uk flag' className='language-icon' />
                                             </li>

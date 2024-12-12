@@ -1,3 +1,6 @@
+@use '../mixins/colors.scss' as *;
+@use '../mixins/fonts.scss' as *;
+
 .header {
     display: flex;
     flex-direction: row;
@@ -9,6 +12,7 @@
     .header-logo {
         height: auto;
         width: 130px;
+        margin: 0 0 0 20px;
     }
 
     .burger {
@@ -28,24 +32,32 @@
     .burger-menu {
         width: 200px;
         height: auto;
-        background-color: green;
+        overflow: hidden;
         position: absolute;
-        top: 100px;
-        right: 10px;
+        top: 120px;
+        right: 0;
+        z-index: 3;
+        transition: height 0.3s ease-in-out;
+        background-color: #5bbe9b;
 
         .nav-items {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            @include main-sans-font;
+            padding: 0 0 0 20px;
         
             li {
                 list-style: none;
                 text-align: left;
             }
+
+            .language-icon {
+                height: auto;
+                width: 30px;
+            }
         }
-
     }
-
 }
 
 .hidden {

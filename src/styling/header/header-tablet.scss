@@ -1,0 +1,70 @@
+@use '../mixins/colors.scss' as *;
+@use '../mixins/fonts.scss' as *;
+
+@media (min-width: 768px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+
+        .header-logo {
+            height: auto;
+            width: 130px;
+            margin: 0 0 0 20px;
+        }
+
+        .burger {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            margin: 0 20px 0 0;
+
+            span {
+                width: 30px;
+                height: 5px;
+                background-color: black;
+                border-radius: 10px;
+            }
+        }
+
+        .burger-menu {
+            width: 200px;
+            height: auto;
+            overflow: hidden;
+            position: absolute;
+            top: 120px;
+            right: 0;
+            z-index: 3;
+            transition: height 0.3s ease-in-out;
+            background-color: #5bbe9b;
+
+            .nav-items {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                @include main-sans-font;
+                padding: 0 0 0 20px;
+
+                li {
+                    list-style: none;
+                    text-align: left;
+                }
+
+                .language-icon {
+                    height: auto;
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+}
+
