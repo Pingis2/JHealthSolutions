@@ -1,73 +1,36 @@
-@use '../mixins/fonts.scss' as *;
-@use '../mixins/colors.scss' as *;
+@use "../mixins/fonts.scss" as *;
+@use "../mixins/colors.scss" as *;
 
 @media (min-width: 768px) {
-    .home-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-        height: 60px;
-        width: 100%;
+  .profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px 0 0 0;
+    gap: 40px;
 
-        @include main-green-color;
+    img {
+      border-radius: 20px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      height: auto;
+      width: 300px;
+    }
+
+    .info-text {
+      text-align: center;
+
+      h1 {
         @include main-sans-font;
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 25px 0 0 0;
+      }
 
-        .home {
-            margin: 0 0 0 100px;
-            cursor: pointer;
-            transition: color 0.2s ease-in;
-        }
-
-        .home:hover {
-            color: black;
-        }
-
-        .page-name {
-            margin: 0 100px 0 0;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-
-        img {
-            margin-left: 8px;
-            max-height: 20px;
-            max-width: 20px;
-            margin-right: 7px;
-        }
+      h3 {
+        margin: 5px;
+        @include main-sans-font;
+        font-weight: bold;
+      }
     }
-
-    .profiles {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin: 100px 0 0 0;
-        gap: 40px;
-
-        img {
-            border-radius: 20px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            height: auto;
-            width: 300px;
-        }
-
-        .info-text {
-            text-align: center;
-
-            h1 {
-                @include main-sans-font;
-                font-weight: bold;
-                font-size: 2rem;
-                margin: 25px 0 0 0;
-            }
-
-            h3 {
-                margin: 5px;
-                @include main-sans-font;
-                font-weight: bold;
-            }
-        }
-    }
+  }
 }

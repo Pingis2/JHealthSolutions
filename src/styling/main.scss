@@ -1,10 +1,11 @@
-@use './header/header.scss' as *;
+@use "./header/header.scss" as *;
 @use "./collaboration-partners/collaborations-partners.scss" as *;
 @use "./home/home.scss" as *;
 @use "./science-technology/science-technology.scss" as *;
 @use "./career/career.scss" as *;
 @use "./contact/contact.scss" as *;
 @use './privacy/privacy.scss' as *;
+@use "./not-found/not-found.scss" as *;
 
 html {
   margin: 0;
