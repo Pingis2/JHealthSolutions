@@ -1,13 +1,9 @@
 import { Header } from "../components/header";
 import scienceImage from "../assets/images/home-page/science-image.jpg";
-import { useNavigate } from "react-router-dom";
+import { useHandleNavigation } from "../utils/navigationUtils";
 
 export const ScienceTechnology = () => {
-  const navigate = useNavigate();
-
-  const handleNavigation = (path: string) => {
-    navigate(path);
-  };
+  const handleNavigation = useHandleNavigation();
 
   return (
     <div science-technology-container>
