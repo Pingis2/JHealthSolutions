@@ -1,13 +1,9 @@
 import { Header } from "../components/header";
-import { useNavigate } from "react-router-dom";
+import { useHandleNavigation } from "../utils/navigationUtils";
 import careerImage from "../assets/images/career/career-image.png";
 
 export const Career = () => {
-  const navigate = useNavigate();
-
-  const handleNavigation = (path: string) => {
-    navigate(path);
-  };
+  const handleNavigation = useHandleNavigation();
 
   return (
     <div className="career-container">

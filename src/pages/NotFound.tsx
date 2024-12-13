@@ -1,13 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import { useHandleNavigation } from "../utils/navigationUtils";
 import { Header } from "../components/header";
 import notFoundImage from "../assets/images/notFound/5203299.jpg";
 
 export const NotFound = () => {
-  const navigate = useNavigate();
-
-  const handleNavigation = (path: string) => {
-    navigate(path);
-  };
+  const handleNavigation = useHandleNavigation();
 
   return (
     <div className="not-found-page">

@@ -1,13 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import { useHandleNavigation } from "../utils/navigationUtils";
 import { Header } from "../components/header";
 import contactImage from "../assets/images/contact/contact-image.png";
 
 export const Contact = () => {
-  const navigate = useNavigate();
-
-  const handleNavigation = (path: string) => {
-    navigate(path);
-  };
+  const handleNavigation = useHandleNavigation();
 
   return (
     <div className="contact-page">

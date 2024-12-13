@@ -1,14 +1,10 @@
-import { useNavigate } from "react-router-dom";
+import { useHandleNavigation } from "../utils/navigationUtils";
 import { Header } from "../components/header";
 import JessicaImage from "../assets/images/collaboration-partners/jessica-image.png";
 import DmytroImage from "../assets/images/collaboration-partners/dmytro-image.png";
 
 export const CollaborationPartners = () => {
-  const navigate = useNavigate();
-
-  const handleNavigation = (path: string) => {
-    navigate(path);
-  };
+  const handleNavigation = useHandleNavigation();
 
   return (
     <>
