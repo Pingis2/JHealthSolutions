@@ -11,9 +11,9 @@ export const NotFound = () => {
         <div className="header-content">
           <ul className="header-list">
             <li onClick={() => handleNavigation("/")} className="home-link">
-              Home
+              Heim
             </li>
-            <li className="page-title">Not Found Page</li>
+            <li className="page-title">Seite Nicht Gefunden</li>
           </ul>
         </div>
       </header>

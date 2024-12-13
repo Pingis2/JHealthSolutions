@@ -1,0 +1,43 @@
+@use '../mixins/colors.scss' as *;
+@use '../mixins/fonts.scss' as *;
+
+@media (min-width: 1024px) {
+    .background-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -3;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: row;
+
+        .text-1 {
+            @include main-sans-font;
+            height: auto;
+            width: 30%;
+    
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        .text-2 {
+            height: auto;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+

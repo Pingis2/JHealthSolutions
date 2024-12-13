@@ -45,17 +45,19 @@ export const Header = () => {
             ></img>
             <nav>
               <ul className="nav-items">
-                <li onClick={() => handleNavigation("/")}>Home</li>
+                <li onClick={() => handleNavigation("/")}>Heim</li>
                 <li onClick={() => handleNavigation("/science-technology")}>
-                  Science & Technology
+                  Wissenschaft & Technologie
                 </li>
                 <li onClick={() => handleNavigation("/collaboration-partners")}>
-                  Collaboration Partners
+                  Kooperationspartner
                 </li>
-                <li onClick={() => handleNavigation("/career")}>Career</li>
-                <li onClick={() => handleNavigation("/contact")}>Contact</li>
-                <li onClick={() => handleNavigation("/privacy")}>Privacy</li>
-                <li onClick={() => handleNavigation("/about-us")}>About us</li>
+                <li onClick={() => handleNavigation("/career")}>Karriere</li>
+                <li onClick={() => handleNavigation("/contact")}>Kontakt</li>
+                <li onClick={() => handleNavigation("/privacy")}>
+                  Datenschutz
+                </li>
+                <li onClick={() => handleNavigation("/about-us")}>Impressum</li>
                 <li>
                   <img
                     src={UKFlagIcon}

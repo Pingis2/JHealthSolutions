@@ -6,7 +6,7 @@ import ScienceTechnology from "./pages/ScienceTechnology";
 import CollaborationPartners from "./pages/CollaborationPartners";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
-import Imprint from "./pages/Imprint";
+import AboutUs from "./pages/AboutUs";
 import Privacy from "./pages/Privacy";
 
 export const router = createBrowserRouter([
@@ -37,7 +37,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/about-us",
-        element: <Imprint />,
+        element: <AboutUs />,
       },
       {
         path: "/privacy",
