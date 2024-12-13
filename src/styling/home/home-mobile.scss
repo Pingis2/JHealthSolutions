@@ -171,8 +171,49 @@
 
 @media (min-width: 640px) {
   .home-container {
-    .text-info-section {
-      margin-top: 130px;
+    .image-section {
+      .text-info-section {
+        margin-top: 130px;
+      }
+
+      .modal {
+        max-width: 500px;
+        .modal-content {
+          h3 {
+            font-size: 1.5rem;
+          }
+
+          label {
+            font-size: 1.3rem;
+          }
+
+          input {
+            width: 90%;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+          }
+
+          textarea {
+            width: 90%;
+            height: 70px;
+            border-radius: 5px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+          }
+
+          .submit-button {
+            border-radius: 5px;
+            font-size: 1.3rem;
+          }
+
+          .close-button {
+            font-size: 2.7rem;
+            top: 5px;
+          }
+        }
+      }
     }
   }
 }

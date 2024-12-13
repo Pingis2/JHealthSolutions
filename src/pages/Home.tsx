@@ -41,15 +41,17 @@ export const Home = () => {
                 </button>
                 <h3>Kontaktaufnehmen</h3>
                 <form>
-                  <label>
+                  <label className="label">
                     Name:
                     <input type="text" name="name" required />
                   </label>
-                  <label>
+                  <br />
+                  <label className="label">
                     E-Mail:
                     <input type="email" name="email" required />
                   </label>
-                  <label>
+                  <br />
+                  <label className="label">
                     Nachricht:
                     <textarea name="message" required />
                   </label>
