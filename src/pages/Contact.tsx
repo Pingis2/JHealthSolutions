@@ -15,9 +15,9 @@ export const Contact = () => {
         <div className="header-content">
           <ul className="header-list">
             <li onClick={() => handleNavigation("/")} className="home-link">
-              Home
+              Heim
             </li>
-            <li className="page-title">Contact</li>
+            <li className="page-title">Kontakt</li>
           </ul>
         </div>
       </header>

@@ -15,9 +15,9 @@ export const Privacy = () => {
       <div className="header-content">
         <ul className="header-list">
           <li onClick={() => handleNavigation("/")} className="home-link">
-            Home
+            Heim
           </li>
-          <li className="page-title">Privacy</li>
+          <li className="page-title">Datenschutz</li>
         </ul>
       </div>
     </header>
