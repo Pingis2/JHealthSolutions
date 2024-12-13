@@ -5,24 +5,29 @@ import { useHandleNavigation } from "../utils/navigationUtils";
 export const Privacy = () => {
   const handleNavigation = useHandleNavigation();
 
-  return <>
-    <header className="green-header">
-      <div className="header-content">
-        <ul className="header-list">
-          <li onClick={() => handleNavigation("/")} className="home-link">
-            Heim
-          </li>
-          <li className="page-title">Datenschutz</li>
-        </ul>
-      </div>
-    </header>
-    <Header></Header>
-    <img src={image} alt="" className="background-image"></img>
-    <div className="texts">
-      <section className="text-1">
-        <h3>Datenschutzerklärung</h3>
-        <p>
-          Wir freuen uns über Ihr Interesse an unserer Website. Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Nachfolgend möchten wir Sie darüber informieren, wie wir mit Ihren personenbezogenen Daten umgehen, wenn Sie unsere Website nutzen.</p>
+  return (
+    <>
+      <header className="green-header">
+        <div className="header-content">
+          <ul className="header-list">
+            <li onClick={() => handleNavigation("/")} className="home-link">
+              Heim
+            </li>
+            <li className="page-title">Datenschutz</li>
+          </ul>
+        </div>
+      </header>
+      <Header></Header>
+      <img src={image} alt="" className="background-image"></img>
+      <div className="texts">
+        <section className="text-1">
+          <h3>Datenschutzerklärung</h3>
+          <p>
+            Wir freuen uns über Ihr Interesse an unserer Website. Der Schutz
+            Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen.
+            Nachfolgend möchten wir Sie darüber informieren, wie wir mit Ihren
+            personenbezogenen Daten umgehen, wenn Sie unsere Website nutzen.
+          </p>
 
           <p>
             1. Verantwortlicher Verantwortlich für die Datenverarbeitung auf
