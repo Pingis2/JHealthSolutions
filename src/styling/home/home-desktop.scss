@@ -1,7 +1,6 @@
 @media (min-width: 1024px) {
   .home-container {
     .home-header {
-
       p {
         font-size: 1.2rem;
       }
@@ -37,6 +36,12 @@
         .contact-button {
           margin-top: 15px;
         }
+      }
+
+      .modal {
+        top: 0%;
+        margin-left: 30px;
+        max-width: 600px;
       }
     }
 
