@@ -47,13 +47,13 @@ export const Header = () => {
                         <img src={OrantaLogo} alt="logo of oranta" className='header-logo'></img>
                         <nav>
                             <ul className="nav-items">
-                                <li onClick={() => handleNavigation('/')}>Home</li>
-                                <li onClick={() => handleNavigation('/science-technology')}>Science & Technology</li>
-                                <li onClick={() => handleNavigation('/collaboration-partners')}>Collaboration Partners</li>
-                                <li onClick={() => handleNavigation('/career')}>Career</li>
-                                <li onClick={() => handleNavigation('/contact')}>Contact</li>
-                                <li onClick={() => handleNavigation('/privacy')}>Privacy</li>
-                                <li onClick={() => handleNavigation('/about-us')}>About us</li>
+                                <li onClick={() => handleNavigation('/')}>Heim</li>
+                                <li onClick={() => handleNavigation('/science-technology')}>Wissenschaft & Technologie</li>
+                                <li onClick={() => handleNavigation('/collaboration-partners')}>Kooperationspartner</li>
+                                <li onClick={() => handleNavigation('/career')}>Karriere</li>
+                                <li onClick={() => handleNavigation('/contact')}>Kontakt</li>
+                                <li onClick={() => handleNavigation('/privacy')}>Datenschutz</li>
+                                <li onClick={() => handleNavigation('/about-us')}>Impressum</li>
                                 <li>
                                     <img src={UKFlagIcon} alt='icon of the uk flag' className='language-icon' />
                                 </li>
