@@ -15,9 +15,9 @@ export const Career = () => {
         <div className="header-content">
           <ul className="header-list">
             <li onClick={() => handleNavigation("/")} className="home-link">
-              Home
+              Heim
             </li>
-            <li className="page-title">Career</li>
+            <li className="page-title">Karriere</li>
           </ul>
         </div>
       </header>
