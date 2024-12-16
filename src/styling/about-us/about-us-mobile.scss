@@ -1,6 +1,10 @@
 @use "../mixins/colors.scss" as *;
 @use "../mixins/fonts.scss" as *;
 
+.about-us-container {
+  min-height: 100vh;
+}
+
 .home-header {
   display: flex;
   justify-content: space-between;
@@ -40,6 +44,8 @@
 .texts {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   .text-1 {
     @include main-sans-font;
