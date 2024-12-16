@@ -1,5 +1,19 @@
 @media (min-width: 1024px) {
   .contact-page {
+    .home-header {
+      .header-left {
+        p {
+          margin-left: 35px;
+        }
+      }
+
+      .header-right {
+        p {
+          margin-right: 35px;
+        }
+      }
+    }
+
     .background-image {
       height: calc(100vh - 160px);
 
