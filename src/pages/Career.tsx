@@ -1,6 +1,7 @@
 import { Header } from "../components/header";
 import logo from "../assets/logo/JHealthSolutions-logo.png";
 import careerImage from "../assets/images/career/career-image.png";
+import Footer from "../components/Footer";
 
 export const Career = () => {
   return (
@@ -82,6 +83,8 @@ export const Career = () => {
           </p>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
