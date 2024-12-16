@@ -1,72 +1,90 @@
-@use '../mixins/colors.scss' as *;
-@use '../mixins/fonts.scss' as *;
+@use "../mixins/colors.scss" as *;
+@use "../mixins/fonts.scss" as *;
 
 @media (min-width: 768px) {
-    .green-header {
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .green-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        @include main-green-color;
-        @include main-sans-font;
+    @include main-green-color;
+    @include main-sans-font;
 
-        .header-content {
-            width: 100%;
-            max-width: 1200px;
-        }
-
-        .header-list {
-            display: flex;
-            justify-content: space-between;
-            list-style: none;
-            color: white;
-            align-items: center;
-            margin: 15px;
-            padding: 0;
-            font-size: 1rem;
-        }
-
-        .home-link {
-            cursor: pointer;
-        }
-
-        .home-link:hover {
-            text-decoration: underline;
-        }
+    .header-content {
+      width: 100%;
+      max-width: 1200px;
     }
 
-    .background-image {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        z-index: -3;
+    .header-list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      color: white;
+      align-items: center;
+      margin: 15px;
+      padding: 0;
+      font-size: 1rem;
     }
 
-    .texts {
-        display: flex;
-        flex-direction: column;
-        @include main-sans-font;
-        font-size: 1.2rem;
-        justify-content: space-around;
-
-        .text-1 {
-            width: 90%;
-            height: auto;
-            margin: 0 auto 0 auto;
-
-            h3 {
-                font-weight: bold;
-            }
-        }
-
-        .text-2 {
-            width: 90%;
-            height: auto;
-            margin: 0 auto 0 auto;
-        }
+    .home-link {
+      cursor: pointer;
     }
+
+    .home-link:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -3;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    @include main-sans-font;
+    font-size: 1.2rem;
+    justify-content: space-around;
+
+    .text-1 {
+      width: 90%;
+      height: auto;
+      margin: 0 auto 0 auto;
+
+      h3 {
+        font-weight: bold;
+      }
+    }
+
+    .text-2 {
+      width: 90%;
+      height: auto;
+      margin: 0 auto 0 auto;
+    }
+  }
+}
+
+@media (min-width: 840px) {
+  .home-header {
+    .header-left {
+      p {
+        margin-left: 25px;
+        font-size: 1.1rem;
+      }
+    }
+
+    .header-right {
+      p {
+        margin-right: 25px;
+        font-size: 1.1rem;
+      }
+    }
+  }
 }

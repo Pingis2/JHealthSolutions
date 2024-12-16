@@ -1,23 +1,26 @@
 import { Header } from "../components/header";
 import image from "../assets/images/contact/contact-image.png";
-import { useHandleNavigation } from "../utils/navigationUtils";
+import logo from "../assets/logo/JHealthSolutions-logo.png";
 
 export const Privacy = () => {
-  const handleNavigation = useHandleNavigation();
-
   return (
     <>
-      <header className="green-header">
-        <div className="header-content">
-          <ul className="header-list">
-            <li onClick={() => handleNavigation("/")} className="home-link">
-              Heim
-            </li>
-            <li className="page-title">Datenschutz</li>
-          </ul>
+      <header className="home-header">
+        <div className="header-left">
+          <p>JHealthSolutions</p>
+          <img
+            src={logo}
+            alt="JHealthSolutions logo"
+            className="jhealt-solutions-logo"
+          />
+        </div>
+        <div className="header-right">
+          <p>Datenschutz</p>
         </div>
       </header>
+
       <Header></Header>
+
       <img src={image} alt="" className="background-image"></img>
       <div className="texts">
         <section className="text-1">
