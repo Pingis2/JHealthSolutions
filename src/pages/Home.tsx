@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo/JHealthSolutions-logo.png";
 import { Header } from "../components/header";
+import emailjs from "emailjs-com";
 
 export const Home = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -9,15 +10,43 @@ export const Home = () => {
     setIsFormVisible(!isFormVisible);
   };
 
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, //Service id
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Template_id
+        event.target as HTMLFormElement,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY //Public key
+      )
+      .then(
+        (result) => {
+          console.log("E-Mail send", result.text);
+          alert("Thank you for your message! We will return soon.");
+          event.currentTarget.reset();
+        },
+        (error) => {
+          console.error("Error while sending email", error.text);
+          alert("Something went wrong, please try again later.");
+        }
+      );
+  };
+
   return (
     <div className="home-container">
       <header className="home-header">
-        <p>JHealthSolutions</p>
-        <img
-          src={logo}
-          alt="JHealthSolutions logo"
-          className="jhealt-solutions-logo"
-        />
+        <div className="header-left">
+          <p>JHealthSolutions</p>
+          <img
+            src={logo}
+            alt="JHealthSolutions logo"
+            className="jhealt-solutions-logo"
+          />
+        </div>
+        <div className="header-right">
+          <p>Home</p>
+        </div>
       </header>
 
       <Header />
@@ -40,15 +69,15 @@ export const Home = () => {
                   &times;
                 </button>
                 <h3>Kontaktaufnehmen</h3>
-                <form>
+                <form onSubmit={handleSubmit}>
                   <label className="label">
                     Name:
-                    <input type="text" name="name" required />
+                    <input type="text" name="from_name" required />
                   </label>
                   <br />
                   <label className="label">
                     E-Mail:
-                    <input type="email" name="email" required />
+                    <input type="email" name="from_email" required />
                   </label>
                   <br />
                   <label className="label">

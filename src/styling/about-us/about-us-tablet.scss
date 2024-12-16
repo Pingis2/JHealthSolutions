@@ -1,41 +1,59 @@
-@use '../mixins/colors.scss' as *;
-@use '../mixins/fonts.scss' as *;
+@use "../mixins/colors.scss" as *;
+@use "../mixins/fonts.scss" as *;
 
 @media (min-width: 768px) {
-    .background-image {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        z-index: -3;
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -3;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+
+    .text-1 {
+      @include main-sans-font;
+      height: auto;
+      width: 90%;
+
+      p {
+        font-size: 1.2rem;
+      }
     }
 
-    .texts {
-        display: flex;
-        flex-direction: column;
+    .text-2 {
+      height: auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-        .text-1 {
-            @include main-sans-font;
-            height: auto;
-            width: 90%;
-
-            p {
-                font-size: 1.2rem;
-            }
-        }
-
-        .text-2 {
-            height: auto;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            p {
-                font-size: 1.2rem;
-            }
-        }
+      p {
+        font-size: 1.2rem;
+      }
     }
+  }
+}
+
+@media (min-width: 840px) {
+  .home-header {
+    .header-left {
+      p {
+        margin-left: 25px;
+        font-size: 1.1rem;
+      }
+    }
+
+    .header-right {
+      p {
+        margin-right: 25px;
+        font-size: 1.1rem;
+      }
+    }
+  }
 }

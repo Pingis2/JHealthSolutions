@@ -45,12 +45,12 @@ export const Header = () => {
             ></img>
             <nav>
               <ul className="nav-items">
-                <li onClick={() => handleNavigation("/")}>Heim</li>
+                <li onClick={() => handleNavigation("/")}>Home</li>
                 <li onClick={() => handleNavigation("/science-technology")}>
-                  Wissenschaft & Technologie
+                  Science & Technology
                 </li>
                 <li onClick={() => handleNavigation("/collaboration-partners")}>
-                  Kooperationspartner
+                  Collaboration Partners
                 </li>
                 <li onClick={() => handleNavigation("/career")}>Karriere</li>
                 <li onClick={() => handleNavigation("/contact")}>Kontakt</li>
@@ -101,16 +101,16 @@ export const Header = () => {
                         Collaboration Partners
                       </li>
                       <li onClick={() => handleNavigation("/career")}>
-                        Career
+                        Karriere
                       </li>
                       <li onClick={() => handleNavigation("/contact")}>
-                        Contact
+                        Kontakt
                       </li>
                       <li onClick={() => handleNavigation("/privacy")}>
-                        Privacy
+                        Datenschutz
                       </li>
                       <li onClick={() => handleNavigation("/about-us")}>
-                        About us
+                        Impressum
                       </li>
                       <li>
                         <img

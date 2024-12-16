@@ -1,4 +1,18 @@
 @media (min-width: 1024px) {
+  .home-header {
+    .header-left {
+      p {
+        margin-left: 35px;
+      }
+    }
+
+    .header-right {
+      p {
+        margin-right: 35px;
+      }
+    }
+  }
+
   .image-text-section {
     display: flex;
     flex-direction: row;

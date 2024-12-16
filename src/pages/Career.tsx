@@ -1,20 +1,21 @@
 import { Header } from "../components/header";
-import { useHandleNavigation } from "../utils/navigationUtils";
+import logo from "../assets/logo/JHealthSolutions-logo.png";
 import careerImage from "../assets/images/career/career-image.png";
 
 export const Career = () => {
-  const handleNavigation = useHandleNavigation();
-
   return (
     <div className="career-container">
-      <header className="green-header">
-        <div className="header-content">
-          <ul className="header-list">
-            <li onClick={() => handleNavigation("/")} className="home-link">
-              Heim
-            </li>
-            <li className="page-title">Karriere</li>
-          </ul>
+      <header className="home-header">
+        <div className="header-left">
+          <p>JHealthSolutions</p>
+          <img
+            src={logo}
+            alt="JHealthSolutions logo"
+            className="jhealt-solutions-logo"
+          />
+        </div>
+        <div className="header-right">
+          <p>Karriere</p>
         </div>
       </header>
 

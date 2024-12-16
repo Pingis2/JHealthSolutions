@@ -1,20 +1,21 @@
 import { Header } from "../components/header";
 import scienceImage from "../assets/images/home-page/science-image.jpg";
-import { useHandleNavigation } from "../utils/navigationUtils";
+import logo from "../assets/logo/JHealthSolutions-logo.png";
 
 export const ScienceTechnology = () => {
-  const handleNavigation = useHandleNavigation();
-
   return (
     <div science-technology-container>
-      <header className="green-header">
-        <div className="header-content">
-          <ul className="header-list">
-            <li onClick={() => handleNavigation("/")} className="home-link">
-              Heim
-            </li>
-            <li className="page-title">Wissenschaft & Technologie</li>
-          </ul>
+      <header className="home-header">
+        <div className="header-left">
+          <p>JHealthSolutions</p>
+          <img
+            src={logo}
+            alt="JHealthSolutions logo"
+            className="jhealt-solutions-logo"
+          />
+        </div>
+        <div className="header-right">
+          <p>Science & Technology</p>
         </div>
       </header>
 
