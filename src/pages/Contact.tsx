@@ -1,6 +1,7 @@
 import logo from "../assets/logo/JHealthSolutions-logo.png";
 import { Header } from "../components/header";
 import contactImage from "../assets/images/contact/contact-image.png";
+import Footer from "../components/Footer";
 
 export const Contact = () => {
   return (
@@ -33,6 +34,8 @@ export const Contact = () => {
           <p>jhealthsolutions.hd@gmail.com</p>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

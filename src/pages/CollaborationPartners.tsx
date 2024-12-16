@@ -2,10 +2,11 @@ import logo from "../assets/logo/JHealthSolutions-logo.png";
 import { Header } from "../components/header";
 import JessicaImage from "../assets/images/collaboration-partners/jessica-image.png";
 import DmytroImage from "../assets/images/collaboration-partners/dmytro-image.png";
+import Footer from "../components/Footer";
 
 export const CollaborationPartners = () => {
   return (
-    <>
+    <div className="collboration-partners-container">
       <header className="home-header">
         <div className="header-left">
           <p>JHealthSolutions</p>
@@ -49,7 +50,9 @@ export const CollaborationPartners = () => {
           </div>
         </section>
       </div>
-    </>
+
+      <Footer />
+    </div>
   );
 };
 

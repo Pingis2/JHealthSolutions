@@ -62,12 +62,6 @@ export const Header = () => {
                 <li onClick={() => handleNavigation("/contact")}>
                   {t('contact')}
                 </li>
-                <li onClick={() => handleNavigation("/privacy")}>
-                  Datenschutz
-                </li>
-                <li onClick={() => handleNavigation("/about-us")}>
-                  Impressum
-                </li>
                 <li>
                   <img
                     src={i18n.resolvedLanguage === 'en' ? GermanFlagIcon : UKFlagIcon} // Opposite flag
@@ -114,15 +108,6 @@ export const Header = () => {
                       </li>
                       <li onClick={() => handleNavigation("/career")}>
                         Karriere
-                      </li>
-                      <li onClick={() => handleNavigation("/contact")}>
-                        Kontakt
-                      </li>
-                      <li onClick={() => handleNavigation("/privacy")}>
-                        Datenschutz
-                      </li>
-                      <li onClick={() => handleNavigation("/about-us")}>
-                        Impressum
                       </li>
                       <li>
                         <img

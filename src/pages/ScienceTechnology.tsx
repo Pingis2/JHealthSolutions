@@ -1,6 +1,7 @@
 import { Header } from "../components/header";
 import scienceImage from "../assets/images/home-page/science-image.jpg";
 import logo from "../assets/logo/JHealthSolutions-logo.png";
+import Footer from "../components/Footer";
 
 export const ScienceTechnology = () => {
 
@@ -31,6 +32,8 @@ export const ScienceTechnology = () => {
           />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };
