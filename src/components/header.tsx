@@ -53,11 +53,6 @@ export const Header = () => {
                   Collaboration Partners
                 </li>
                 <li onClick={() => handleNavigation("/career")}>Karriere</li>
-                <li onClick={() => handleNavigation("/contact")}>Kontakt</li>
-                <li onClick={() => handleNavigation("/privacy")}>
-                  Datenschutz
-                </li>
-                <li onClick={() => handleNavigation("/about-us")}>Impressum</li>
                 <li>
                   <img
                     src={UKFlagIcon}
@@ -102,15 +97,6 @@ export const Header = () => {
                       </li>
                       <li onClick={() => handleNavigation("/career")}>
                         Karriere
-                      </li>
-                      <li onClick={() => handleNavigation("/contact")}>
-                        Kontakt
-                      </li>
-                      <li onClick={() => handleNavigation("/privacy")}>
-                        Datenschutz
-                      </li>
-                      <li onClick={() => handleNavigation("/about-us")}>
-                        Impressum
                       </li>
                       <li>
                         <img
