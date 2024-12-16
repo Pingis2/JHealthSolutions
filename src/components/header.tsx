@@ -3,10 +3,14 @@ import "../assets/logo/oranta-logo.png";
 import { useEffect, useState } from "react";
 import OrantaLogo from "../assets/logo/oranta-logo.png";
 import UKFlagIcon from "../assets/icons/uk-flag-icon.png";
+import GermanFlagIcon from '../assets/icons/german-flag-icon.png';
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
   const [menuDisplay, setMenuDisplay] = useState(true);
   const [burgerOpen, setBurgerOpen] = useState(false);
+  
+  const { t, i18n} = useTranslation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -47,17 +51,24 @@ export const Header = () => {
               <ul className="nav-items">
                 <li onClick={() => handleNavigation("/")}>Home</li>
                 <li onClick={() => handleNavigation("/science-technology")}>
-                  Science & Technology
+                  {t('science-technology')}
                 </li>
                 <li onClick={() => handleNavigation("/collaboration-partners")}>
-                  Collaboration Partners
+                  {t('collaboration-partners')}
                 </li>
-                <li onClick={() => handleNavigation("/career")}>Karriere</li>
+                <li onClick={() => handleNavigation("/career")}>
+                  {t('career')}
+                </li>
+                <li onClick={() => handleNavigation("/contact")}>
+                  {t('contact')}
+                </li>
                 <li>
                   <img
-                    src={UKFlagIcon}
-                    alt="icon of the uk flag"
+                    src={i18n.resolvedLanguage === 'en' ? GermanFlagIcon : UKFlagIcon} // Opposite flag
+                    alt={`Switch to ${i18n.resolvedLanguage === 'en' ? 'German' : 'English'}`}
                     className="language-icon"
+                    onClick={() => i18n.changeLanguage(i18n.resolvedLanguage === 'en' ? 'de' : 'en')} // Switch to the opposite language
+                    title={`Switch to ${i18n.resolvedLanguage === 'en' ? 'German' : 'English'}`} // Tooltip
                   />
                 </li>
               </ul>

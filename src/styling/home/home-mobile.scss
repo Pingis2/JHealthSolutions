@@ -1,5 +1,5 @@
-@import "../mixins/colors.scss";
-@import "../mixins/fonts.scss";
+@use "../mixins/colors.scss" as *;
+@use "../mixins/fonts.scss" as *;
 
 .home-container {
   display: flex;
