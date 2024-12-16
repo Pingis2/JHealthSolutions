@@ -1,0 +1,17 @@
+@media (min-width: 840px) {
+  .home-header {
+    .header-left {
+      p {
+        margin-left: 25px;
+        font-size: 1.1rem;
+      }
+    }
+
+    .header-right {
+      p {
+        margin-right: 25px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
