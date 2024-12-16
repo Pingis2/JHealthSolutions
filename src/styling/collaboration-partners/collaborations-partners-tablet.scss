@@ -2,6 +2,22 @@
 @use "../mixins/colors.scss" as *;
 
 @media (min-width: 768px) {
+  .home-header {
+    .header-left {
+      p {
+        margin-left: 25px;
+        font-size: 1.1rem;
+      }
+    }
+
+    .header-right {
+      p {
+        margin-right: 25px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
   .profiles {
     display: flex;
     flex-direction: row;
