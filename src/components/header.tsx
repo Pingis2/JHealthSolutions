@@ -4,18 +4,13 @@ import { useEffect, useState } from "react";
 import OrantaLogo from "../assets/logo/oranta-logo.png";
 import UKFlagIcon from "../assets/icons/uk-flag-icon.png";
 import GermanFlagIcon from '../assets/icons/german-flag-icon.png';
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
   const [menuDisplay, setMenuDisplay] = useState(true);
   const [burgerOpen, setBurgerOpen] = useState(false);
-
-  const lngs = {
-      en: { nativeName: 'English' },
-      de: { nativeName: 'Deutsch' }
-    } as const;
   
-    const { t, i18n} = useTranslation();
+  const { t, i18n} = useTranslation();
 
   useEffect(() => {
     const handleResize = () => {
