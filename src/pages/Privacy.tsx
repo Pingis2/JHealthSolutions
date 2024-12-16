@@ -1,6 +1,7 @@
 import { Header } from "../components/header";
 import image from "../assets/images/contact/contact-image.png";
 import logo from "../assets/logo/JHealthSolutions-logo.png";
+import Footer from "../components/Footer";
 
 export const Privacy = () => {
   return (
@@ -97,6 +98,8 @@ export const Privacy = () => {
           </p>
         </section>
       </div>
+
+      <Footer />
     </>
   );
 };
