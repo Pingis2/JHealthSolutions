@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../assets/logo/JHealthSolutions-logo.png";
 import { Header } from "../components/header";
 import emailjs from "emailjs-com";
+import Footer from "../components/Footer";
 
 export const Home = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -104,6 +105,8 @@ export const Home = () => {
           nachhaltige Gesundheit
         </p>
       </section>
+
+      <Footer />
     </div>
   );
 };

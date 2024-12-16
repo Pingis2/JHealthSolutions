@@ -1,6 +1,12 @@
 @use "../mixins/fonts.scss" as *;
 @use "../mixins/colors.scss" as *;
 
+.science-technology-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .home-header {
   display: flex;
   justify-content: space-between;
@@ -42,6 +48,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  margin-bottom: 40px;
 
   .science-technology-image {
     max-width: 100%;

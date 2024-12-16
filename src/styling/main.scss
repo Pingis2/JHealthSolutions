@@ -4,9 +4,10 @@
 @use "./science-technology/science-technology.scss" as *;
 @use "./career/career.scss" as *;
 @use "./contact/contact.scss" as *;
-@use './privacy/privacy.scss' as *;
+@use "./privacy/privacy.scss" as *;
 @use "./not-found/not-found.scss" as *;
-@use './about-us/about-us.scss' as *;
+@use "./about-us/about-us.scss" as *;
+@use "./footer/footer.scss" as *;
 
 html {
   margin: 0;
