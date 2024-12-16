@@ -22,12 +22,8 @@ export const Contact = () => {
 
       <Header></Header>
 
-      <div
-        className="background-image"
-        style={{
-          backgroundImage: `url(${contactImage})`,
-        }}
-      >
+      <div className="contact-container">
+        <img className="background-image" src={contactImage} alt="image of berlin"/>
         <div className="text-container">
           <h1>Kontakt</h1>
           <h2>Bitte senden Sie uns Ihre Nachricht an</h2>

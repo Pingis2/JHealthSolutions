@@ -1,3 +1,10 @@
 @use "./footer-mobile.scss";
 @use "./footer-tablet.scss";
 @use "./footer-desktop.scss";
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

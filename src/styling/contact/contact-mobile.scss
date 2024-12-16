@@ -49,28 +49,28 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
+  }
 
-    .text-container {
-      text-align: center;
-      margin-top: 100px;
+  .text-container {
+    text-align: center;
+    margin-top: 100px;
 
-      @include main-sans-font;
+    @include main-sans-font;
 
-      h1 {
-        font-size: 1.3rem;
-      }
+    h1 {
+      font-size: 1.3rem;
+    }
 
-      h2 {
-        font-size: 1.3rem;
-        margin-top: 30px;
-      }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 30px;
+    }
 
-      p {
-        font-size: 1.6rem;
-        font-weight: bold;
-        margin-top: 50px;
-      }
+    p {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-top: 50px;
     }
   }
 }

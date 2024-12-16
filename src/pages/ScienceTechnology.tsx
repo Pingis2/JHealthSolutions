@@ -7,7 +7,7 @@ export const ScienceTechnology = () => {
 
   return (
     <>
-      <div science-technology-container="true">
+      <div className="science-technology-container">
         <header className="home-header">
           <div className="header-left">
             <p>JHealthSolutions</p>
