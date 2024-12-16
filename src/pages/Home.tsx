@@ -36,12 +36,17 @@ export const Home = () => {
   return (
     <div className="home-container">
       <header className="home-header">
-        <p>JHealthSolutions</p>
-        <img
-          src={logo}
-          alt="JHealthSolutions logo"
-          className="jhealt-solutions-logo"
-        />
+        <div className="header-left">
+          <p>JHealthSolutions</p>
+          <img
+            src={logo}
+            alt="JHealthSolutions logo"
+            className="jhealt-solutions-logo"
+          />
+        </div>
+        <div className="header-right">
+          <p>Home</p>
+        </div>
       </header>
 
       <Header />
