@@ -1,27 +1,8 @@
-import { Header } from "../components/header";
 import image from "../assets/images/contact/contact-image.png";
-import logo from "../assets/logo/JHealthSolutions-logo.png";
-import Footer from "../components/Footer";
 
 export const Privacy = () => {
   return (
     <>
-      <header className="home-header">
-        <div className="header-left">
-          <p>JHealthSolutions</p>
-          <img
-            src={logo}
-            alt="JHealthSolutions logo"
-            className="jhealt-solutions-logo"
-          />
-        </div>
-        <div className="header-right">
-          <p>Datenschutz</p>
-        </div>
-      </header>
-
-      <Header></Header>
-
       <img src={image} alt="" className="background-image"></img>
       <div className="texts">
         <section className="text-1">
@@ -98,8 +79,6 @@ export const Privacy = () => {
           </p>
         </section>
       </div>
-
-      <Footer />
     </>
   );
 };

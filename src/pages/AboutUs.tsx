@@ -1,5 +1,4 @@
 import logo from "../assets/logo/JHealthSolutions-logo.png";
-import { Header } from "../components/header";
 import image from "../assets/images/contact/contact-image.png";
 import Footer from "../components/Footer";
 
@@ -19,8 +18,6 @@ export const AboutUs = () => {
           <p>Impressum</p>
         </div>
       </header>
-
-      <Header></Header>
 
       <img src={image} alt="image of berlin" className="background-image"></img>
 

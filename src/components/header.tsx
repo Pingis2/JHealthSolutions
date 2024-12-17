@@ -5,6 +5,7 @@ import OrantaLogo from "../assets/logo/oranta-logo.png";
 import UKFlagIcon from "../assets/icons/uk-flag-icon.png";
 import GermanFlagIcon from '../assets/icons/german-flag-icon.png';
 import { useTranslation } from "react-i18next";
+import logo from "../assets/logo/JHealthSolutions-logo.png";
 
 export const Header = () => {
   const [menuDisplay, setMenuDisplay] = useState(true);
@@ -39,7 +40,22 @@ export const Header = () => {
 
   return (
     <>
-      <header className="header">
+      <section className="home-header">
+        <div className="header-left">
+          <p>JHealthSolutions</p>
+          <img
+            src={logo}
+            alt="JHealthSolutions logo"
+            className="jhealt-solutions-logo"
+          />
+        </div>
+        <div className="header-right">
+          <p>Home</p>
+        </div>
+      </section>
+
+
+      <section className="header">
         {menuDisplay && (
           <>
             <img
@@ -123,7 +139,7 @@ export const Header = () => {
             )}
           </>
         )}
-      </header>
+      </section>
     </>
   );
 };

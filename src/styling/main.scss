@@ -9,15 +9,15 @@
 @use "./about-us/about-us.scss" as *;
 @use "./footer/footer.scss" as *;
 
-html, body, #root {
+html, body, main{
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
 #root {
-  position: relative;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
