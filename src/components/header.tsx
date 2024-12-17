@@ -6,12 +6,25 @@ import UKFlagIcon from "../assets/icons/uk-flag-icon.png";
 import GermanFlagIcon from '../assets/icons/german-flag-icon.png';
 import { useTranslation } from "react-i18next";
 import logo from "../assets/logo/JHealthSolutions-logo.png";
+import { useLocation } from "react-router-dom";
 
 export const Header = () => {
   const [menuDisplay, setMenuDisplay] = useState(true);
   const [burgerOpen, setBurgerOpen] = useState(false);
+  const [pageName, setPageName] = useState<string>("");
   
-  const { t, i18n} = useTranslation();
+  const { t, i18n } = useTranslation();
+  const location = useLocation();
+
+  const pageNameMapping: {[key: string]: string} = {
+    "/": "Home",
+    "/science-technology": "Science & Technology",
+    "/collaboration-partners": "Collaboration Partners",
+    "/career": "Career",
+    "/contact": "Contact",
+    "/about-us": "About us",
+    "/privacy": "Privacy",
+  }
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,6 +51,16 @@ export const Header = () => {
     setBurgerOpen(!burgerOpen);
   };
 
+  useEffect(() => {
+    const currentPath = location.pathname;
+
+    if (currentPath in pageNameMapping) {
+      setPageName(pageNameMapping[currentPath as keyof typeof pageNameMapping]);
+    } else {
+      setPageName("Page Not Found");
+    }
+  }, [location]);
+
   return (
     <>
       <section className="home-header">
@@ -50,7 +73,7 @@ export const Header = () => {
           />
         </div>
         <div className="header-right">
-          <p>Home</p>
+          <p>{ pageName }</p>
         </div>
       </section>
 
@@ -80,11 +103,11 @@ export const Header = () => {
                 </li>
                 <li>
                   <img
-                    src={i18n.resolvedLanguage === 'en' ? GermanFlagIcon : UKFlagIcon} // Opposite flag
+                    src={i18n.resolvedLanguage === 'en' ? GermanFlagIcon : UKFlagIcon}
                     alt={`Switch to ${i18n.resolvedLanguage === 'en' ? 'German' : 'English'}`}
                     className="language-icon"
-                    onClick={() => i18n.changeLanguage(i18n.resolvedLanguage === 'en' ? 'de' : 'en')} // Switch to the opposite language
-                    title={`Switch to ${i18n.resolvedLanguage === 'en' ? 'German' : 'English'}`} // Tooltip
+                    onClick={() => i18n.changeLanguage(i18n.resolvedLanguage === 'en' ? 'de' : 'en')}
+                    title={`Switch to ${i18n.resolvedLanguage === 'en' ? 'German' : 'English'}`}
                   />
                 </li>
               </ul>
