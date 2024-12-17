@@ -1,0 +1,44 @@
+@use "../mixins/colors.scss" as *;
+@use "../mixins/fonts.scss" as *;
+
+@media (min-width: 1024px) {
+  .privacy-container {
+    height: auto;
+    width: 100%;
+
+    .background-image {
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: -3;
+      }
+    
+      .texts {
+        display: flex;
+        flex-direction: row;
+        @include main-sans-font;
+        font-size: 1.5rem;
+        justify-content: space-around;
+        height: auto;
+    
+        .text-1 {
+          width: 45%;
+          height: auto;
+    
+          h3 {
+            font-weight: bold;
+          }
+        }
+    
+        .text-2 {
+          width: 45%;
+          height: auto;
+        }
+      }
+  }
+
+  
+}

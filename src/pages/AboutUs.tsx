@@ -1,26 +1,9 @@
-import logo from "../assets/logo/JHealthSolutions-logo.png";
 import image from "../assets/images/contact/contact-image.png";
-import Footer from "../components/Footer";
 
 export const AboutUs = () => {
   return (
     <div className="about-us-container">
-      <header className="home-header">
-        <div className="header-left">
-          <p>JHealthSolutions</p>
-          <img
-            src={logo}
-            alt="JHealthSolutions logo"
-            className="jhealt-solutions-logo"
-          />
-        </div>
-        <div className="header-right">
-          <p>Impressum</p>
-        </div>
-      </header>
-
       <img src={image} alt="image of berlin" className="background-image"></img>
-
       <section className="texts">
         <section className="text-1">
           <p>
@@ -66,8 +49,6 @@ export const AboutUs = () => {
           </p>
         </section>
       </section>
-
-      <Footer />
     </div>
   );
 };
