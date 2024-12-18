@@ -20,9 +20,10 @@ export const Header = () => {
     "/": "Home",
     "/science-technology": "Science & Technology",
     "/collaboration-partners": "Collaboration Partners",
-    "/career": "Career",
-    "/about-us": "About us",
-    "/privacy": "Privacy",
+    "/career": "Karriere",
+    "/about-us": "Impressum",
+    "/privacy": "Datebschutz",
+    "/contact": "Kontakt",
   };
 
   useEffect(() => {
