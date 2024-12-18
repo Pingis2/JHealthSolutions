@@ -3,7 +3,7 @@ import "../assets/logo/oranta-logo.png";
 import { useEffect, useState } from "react";
 import OrantaLogo from "../assets/logo/oranta-logo.png";
 import UKFlagIcon from "../assets/icons/uk-flag-icon.png";
-import GermanFlagIcon from '../assets/icons/german-flag-icon.png';
+import GermanFlagIcon from "../assets/icons/german-flag-icon.png";
 import { useTranslation } from "react-i18next";
 import logo from "../assets/logo/JHealthSolutions-logo.png";
 import { useLocation } from "react-router-dom";
@@ -12,19 +12,18 @@ export const Header = () => {
   const [menuDisplay, setMenuDisplay] = useState(true);
   const [burgerOpen, setBurgerOpen] = useState(false);
   const [pageName, setPageName] = useState<string>("");
-  
+
   const { t, i18n } = useTranslation();
   const location = useLocation();
 
-  const pageNameMapping: {[key: string]: string} = {
+  const pageNameMapping: { [key: string]: string } = {
     "/": "Home",
     "/science-technology": "Science & Technology",
     "/collaboration-partners": "Collaboration Partners",
     "/career": "Career",
-    "/contact": "Contact",
     "/about-us": "About us",
     "/privacy": "Privacy",
-  }
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -73,10 +72,9 @@ export const Header = () => {
           />
         </div>
         <div className="header-right">
-          <p>{ pageName }</p>
+          <p>{pageName}</p>
         </div>
       </section>
-
 
       <section className="header">
         {menuDisplay && (
@@ -90,24 +88,33 @@ export const Header = () => {
               <ul className="nav-items">
                 <li onClick={() => handleNavigation("/")}>Home</li>
                 <li onClick={() => handleNavigation("/science-technology")}>
-                  {t('science-technology')}
+                  {t("science-technology")}
                 </li>
                 <li onClick={() => handleNavigation("/collaboration-partners")}>
-                  {t('collaboration-partners')}
+                  {t("collaboration-partners")}
                 </li>
                 <li onClick={() => handleNavigation("/career")}>
-                  {t('career')}
-                </li>
-                <li onClick={() => handleNavigation("/contact")}>
-                  {t('contact')}
+                  {t("career")}
                 </li>
                 <li>
                   <img
-                    src={i18n.resolvedLanguage === 'en' ? GermanFlagIcon : UKFlagIcon}
-                    alt={`Switch to ${i18n.resolvedLanguage === 'en' ? 'German' : 'English'}`}
+                    src={
+                      i18n.resolvedLanguage === "en"
+                        ? GermanFlagIcon
+                        : UKFlagIcon
+                    }
+                    alt={`Switch to ${
+                      i18n.resolvedLanguage === "en" ? "German" : "English"
+                    }`}
                     className="language-icon"
-                    onClick={() => i18n.changeLanguage(i18n.resolvedLanguage === 'en' ? 'de' : 'en')}
-                    title={`Switch to ${i18n.resolvedLanguage === 'en' ? 'German' : 'English'}`}
+                    onClick={() =>
+                      i18n.changeLanguage(
+                        i18n.resolvedLanguage === "en" ? "de" : "en"
+                      )
+                    }
+                    title={`Switch to ${
+                      i18n.resolvedLanguage === "en" ? "German" : "English"
+                    }`}
                   />
                 </li>
               </ul>
