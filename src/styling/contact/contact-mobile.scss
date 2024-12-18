@@ -4,6 +4,7 @@
 .contact-page {
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   .header-right {
     p {
@@ -20,6 +21,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
+    height: 100%;
+    width: 100%;
   }
 
   .text-container {
