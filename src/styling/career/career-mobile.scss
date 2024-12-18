@@ -37,7 +37,7 @@
   }
 }
 
-.image-text-section {
+.career-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,9 +54,8 @@
 
   .career-image {
     width: 100%;
-    height: auto;
+    height: 300px;
     object-fit: cover;
-    margin-bottom: 20px;
   }
 
   .text-overlay {
@@ -77,6 +76,7 @@
     width: 100%;
     text-align: center;
     line-height: 1.4;
+    height: auto;
 
     @include main-sans-font;
 

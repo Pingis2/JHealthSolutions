@@ -1,28 +1,9 @@
-import { Header } from "../components/header";
-import logo from "../assets/logo/JHealthSolutions-logo.png";
 import careerImage from "../assets/images/career/career-image.png";
-import Footer from "../components/Footer";
 
 export const Career = () => {
   return (
-    <div className="career-container">
-      <header className="home-header">
-        <div className="header-left">
-          <p>JHealthSolutions</p>
-          <img
-            src={logo}
-            alt="JHealthSolutions logo"
-            className="jhealt-solutions-logo"
-          />
-        </div>
-        <div className="header-right">
-          <p>Karriere</p>
-        </div>
-      </header>
-
-      <Header></Header>
-
-      <section className="image-text-section">
+    <section className="career-container">
+      
         <div className="image-container">
           <img src={careerImage} alt="Career Image" className="career-image" />
           <div className="text-overlay">
@@ -83,9 +64,6 @@ export const Career = () => {
           </p>
         </div>
       </section>
-
-      <Footer />
-    </div>
   );
 };
 

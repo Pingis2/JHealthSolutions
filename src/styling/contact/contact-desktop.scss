@@ -1,6 +1,5 @@
 @media (min-width: 1024px) {
   .contact-page {
-    height: 120vh;
     .home-header {
       .header-left {
         p {
@@ -16,12 +15,25 @@
     }
 
     .background-image {
-      height: calc(100vh - 160px);
+      height: 100%;
+      z-index: -3;
+    }
 
-      .text-container {
-        p {
-          margin-top: 80px;
-        }
+    .text-container {
+      h1 {
+        font-size: 3rem;
+        text-align: left;
+        margin: 50px 0 0 100px;
+      }
+
+      h2 {
+        font-size: 3rem;
+        text-align: left;
+        margin: 50px 0 0 100px;
+      }
+      p {
+        margin-top: 80px;
+        font-size: 4rem;
       }
     }
   }
