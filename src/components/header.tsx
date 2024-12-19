@@ -144,23 +144,41 @@ export const Header = () => {
                       <li
                         onClick={() => handleNavigation("/science-technology")}
                       >
-                        Science & Technology
+                        {t("science-technology")}
                       </li>
                       <li
                         onClick={() =>
                           handleNavigation("/collaboration-partners")
                         }
                       >
-                        Collaboration Partners
+                        {t("collaboration-partners")}
                       </li>
                       <li onClick={() => handleNavigation("/career")}>
-                        Karriere
+                        {t("career")}
                       </li>
                       <li>
                         <img
-                          src={UKFlagIcon}
-                          alt="icon of the uk flag"
+                          src={
+                            i18n.resolvedLanguage === "en"
+                              ? GermanFlagIcon
+                              : UKFlagIcon
+                          }
+                          alt={`Switch to ${
+                            i18n.resolvedLanguage === "en"
+                              ? "German"
+                              : "English"
+                          }`}
                           className="language-icon"
+                          onClick={() =>
+                            i18n.changeLanguage(
+                              i18n.resolvedLanguage === "en" ? "de" : "en"
+                            )
+                          }
+                          title={`Switch to ${
+                            i18n.resolvedLanguage === "en"
+                              ? "German"
+                              : "English"
+                          }`}
                         />
                       </li>
                     </ul>
