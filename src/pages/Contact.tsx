@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import contactImage from "../assets/images/contact/contact-image.png";
 
 export const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="contact-page">
       <img
@@ -9,9 +12,9 @@ export const Contact = () => {
         alt="image of berlin"
       />
       <div className="text-container">
-        <h1>Kontakt</h1>
-        <h2>Bitte senden Sie uns Ihre Nachricht an</h2>
-        <p>jhealthsolutions.hd@gmail.com</p>
+        <h1>{t("contact-page.contact")}</h1>
+        <h2>{t("contact-page.send-email")}</h2>
+        <p>{t("contact-page.email")}</p>
       </div>
     </div>
   );

@@ -1,8 +1,89 @@
 {
-    "learn": "Lerne React",
-    "description": "Editiere <1>src/App.js</1> und save to reload.",
-    "science-technology": "Science & Technology",
-    "collaboration-partners": "Collaboration Partners",
-    "career": "Karriere",
-    "contact": "Contact"
+  "learn": "Lerne React",
+  "description": "Editiere <1>src/App.js</1> und save to reload.",
+  "science-technology": "Science & Technology",
+  "collaboration-partners": "Collaboration Partners",
+  "career": "Karriere",
+  "contact": "Kontakt",
+  "privacy": "Datenschutz",
+  "about_us": "Impressum",
+  "footer": {
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "about-us": "Impressum"
+  },
+  "about-us": {
+    "section1": {
+      "company_info": "Angaben gemäß § 5 TMG (Telemediengesetz)<br>JHealthSolutions GmbHG<br>Bussemergasse 4<br>69117 Heidelberg",
+      "represented_by": "Vertreten durch:<br>Jessica Bräun",
+      "contact_info": "Kontakt:<br>E-Mail: jhealthsolution.HD@gmail.com<br>Eintragung im Handelsregister.<br>Registergericht: Mannheim<br>Registernummer: HRB 752149<br>Steuernummer: 35002/90412<br>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE346601919",
+      "responsible_content": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
+      "responsible_person": "Jessica Bräun<br>Bussemergasse 4<br>69117 Heidelberg"
+    },
+    "section2": {
+      "online_dispute": "Hinweis zur Online-Streitbeilegung (OS):<br>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr Unsere E-Mail-Adresse finden Sie oben im Impressum.",
+      "disclaimer": "Haftungsausschluss (Disclaimer):<br>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen."
+    }
+  },
+  "career-page": {
+    "image_overlay": "Teil des <br /> Teams",
+    "heading": "Werde Teil unseres innovativen Teams!",
+    "first_text": "Du möchtest die Zukunft aktiv mitgestalten und gemeinsam mit uns Großes erreichen? Dann bist du bei uns genau richtig! Wir suchen leidenschaftliche Mitstreiter, die mit uns neue Wege gehen. Sei dabei und bringe deine Expertise ein, um mit uns etwas Einzigartiges zu schaffen!",
+    "second_text": "Wir freuen uns über deine <strong>Initiativbewerbung</strong> in den Bereichen:",
+    "doctor_heading": "Mediziner (m/w/d):",
+    "doctor_list": {
+      "one": "Du bist Arzt oder Experte im medizinischen Bereich?",
+      "two": "Bringe dein Wissen ein, um unsere Vision für eine bessere Gesundheitsversorgung zu verwirklichen.",
+      "three": "Gemeinsam entwickeln wir innovative Lösungen für Patienten, Ärzte und die gesamte Branche."
+    },
+    "developer_heading": "Softwareentwicklung (m/w/d):",
+    "developer_list": {
+      "one": "Du liebst es, Code zu schreiben und komplexe Probleme zu lösen?",
+      "two": "Hilf uns dabei, modernste Technologien zu nutzen und digitale Produkte zu entwickeln, die das Leben verändern.",
+      "three": "Egal ob Backend, Frontend oder Fullstack - wir freuen uns auf deinen kreativen Input!"
+    },
+    "third_text": "So bewirbst du dich: <br /> Sende uns deine Initiativbewerbung mit Lebenslauf und einem kurzen Motivationsschreiben an <br /> jhealthsolutions.hd@gmail.com.",
+    "fourth_text": "Wir freuen uns darauf, dich kennenzulernen und gemeinsam Großes zu bewegen!"
+  },
+  "collaboration-partners-page": {
+    "jessica": {
+      "name": "Jessica Bräun",
+      "degree": "Dipl. Ing. (FH) Biotechnologie",
+      "role": "Founder JHealthSolutions GmbHG"
+    },
+    "dmytro": {
+      "name": "Dmytro Vakulenko",
+      "degree": "Prof. Dr. Biological Sciences",
+      "role": "Founder of Innovation in Medicine LLC"
+    }
+  },
+  "contact-page": {
+    "contact": "Kontakt",
+    "send-email": "Bitte senden Sie uns Ihre Nachricht an",
+    "email": "jhealthsolutions.hd@gmail.com"
+  },
+  "home-page": {
+    "headline": "Gemeinsam die Zukunft der Medizin gestalten!",
+    "intro-text": "Sie sind Arzt, Sportmediziner oder eine Klinik?",
+    "cta-text": "Testen Sie unser System und teilen Sie Ihre Erfahrungen!",
+    "contact-button": "Kontaktaufnehmen",
+    "modal-title": "Kontaktaufnehmen",
+    "name-label": "Name:",
+    "email-label": "E-Mail:",
+    "message-label": "Nachricht:",
+    "submit-button": "Senden",
+    "thank-you-message": "Danke für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
+    "error-message": "Etwas ist schiefgelaufen, bitte versuchen Sie es später erneut.",
+    "info-headline": "KI-gestützte Präzision - für Diagnostik, Therapieunterstützung und Genesung",
+    "info-text": "Von der Früherkennung bis zur Rehabilitation - Innovation für nachhaltige Gesundheit"
+  },
+  "privacy-page": {
+    "headline": "Datenschutzerklärung",
+    "first-text": "Wir freuen uns über Ihr Interesse an unserer Website. Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Nachfolgend möchten wir Sie darüber informieren, wie wir mit Ihren personenbezogenen Daten umgehen, wenn Sie unsere Website nutzen.",
+    "second-text": "1. Verantwortlicher Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
+    "third-text": "JHealthSolutions GmbHG<br>Bussemergasse 4<br>69117 Heidelberg",
+    "fourth-text": "2. Erhebung und Verwendung personenbezogener Daten Unsere Website dient ausschließlich der Bereitstellung von Informationen über unser Unternehmen und unsere Dienstleistungen. Wir speichern keine personenbezogenen Daten von Ihnen, solange Sie uns diese nicht freiwillig mitteilen.<br>Kontaktaufnahme:<br>Wenn Sie uns per E-Mail, Telefon oder über ein Kontaktformular kontaktieren, verwenden wir Ihre angegebenen Daten (z. B. Name, E-Mail-Adresse, Telefonnummer) ausschließlich zum Zweck der Bearbeitung Ihrer Anfrage. Eine Weitergabe dieser Daten an Dritte erfolgt nicht. Sobald Ihre Anfrage vollständig bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten bestehen, werden die von Ihnen mitgeteilten Daten gelöscht.",
+    "fifth-text": "3. Keine Speicherung von Zugriffsdaten<br>Beim Besuch unserer Website werden keine personenbezogenen Daten automatisch gespeichert. Wir verwenden keine Cookies, Tracking-Tools oder ähnliche Technologien.<br>4. Weitergabe von Daten<br>Ihre personenbezogenen Daten werden von uns weder verkauft noch an Dritte weitergegeben.<br>5. Ihre Rechte<br>Sie haben das Recht:<br>Auskunft über die von uns verarbeiteten personenbezogenen Daten zu erhalten (Art. 15 DSGVO),<br>die Berichtigung unrichtiger Daten zu verlangen (Art. 16 DSGVO),<br>die Löschung Ihrer Daten zu verlangen (Art. 17 DSGVO),<br>der Verarbeitung Ihrer Daten zu widersprechen (Art. 21 DSGVO),<br>eine Einschränkung der Verarbeitung zu verlangen (Art. 18 DSGVO),<br>Ihre Einwilligung zur Datenverarbeitung jederzeit zu widerrufen (Art. 7 Abs. 3 DSGVO).<br>Zur Ausübung dieser Rechte können Sie uns jederzeit unter den oben angegebenen Kontaktdaten erreichen.<br>6. Änderungen dieser Datenschutzerklärung<br>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an geänderte rechtliche Rahmenbedingungen anzupassen. Die aktuelle Version ist jederzeit auf unserer Website verfügbar. Stand: Dezember, 2024",
+    "sixth-text": "Hinweis: Diese Datenschutzerklärung ist nach deutschem Recht verfasst und an Websites angepasst, die keine Daten speichern und personenbezogene Daten nur zur Kontaktaufnahme nutzen"
+  }
 }
