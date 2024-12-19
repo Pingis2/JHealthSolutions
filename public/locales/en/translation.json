@@ -42,5 +42,17 @@
     },
     "third_text": "How to apply: <br /> Send us your spontaneous application with your resume and a brief motivation letter to <br /> jhealthsolutions.hd@gmail.com.",
     "fourth_text": "We look forward to getting to know you and making a big impact together!"
+  },
+  "collaboration-partners-page": {
+    "jessica": {
+      "name": "Jessica Bräun",
+      "degree": "Dipl. Ing. (FH) Biotechnology",
+      "role": "Founder of JHealthSolutions GmbHG"
+    },
+    "dmytro": {
+      "name": "Dmytro Vakulenko",
+      "degree": "Prof. Dr. Biological Sciences",
+      "role": "Founder of Innovation in Medicine LLC"
+    }
   }
 }

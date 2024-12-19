@@ -42,5 +42,17 @@
     },
     "third_text": "So bewirbst du dich: <br /> Sende uns deine Initiativbewerbung mit Lebenslauf und einem kurzen Motivationsschreiben an <br /> jhealthsolutions.hd@gmail.com.",
     "fourth_text": "Wir freuen uns darauf, dich kennenzulernen und gemeinsam Großes zu bewegen!"
+  },
+  "collaboration-partners-page": {
+    "jessica": {
+      "name": "Jessica Bräun",
+      "degree": "Dipl. Ing. (FH) Biotechnologie",
+      "role": "Founder JHealthSolutions GmbHG"
+    },
+    "dmytro": {
+      "name": "Dmytro Vakulenko",
+      "degree": "Prof. Dr. Biological Sciences",
+      "role": "Founder of Innovation in Medicine LLC"
+    }
   }
 }

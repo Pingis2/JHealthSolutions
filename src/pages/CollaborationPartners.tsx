@@ -1,7 +1,10 @@
 import JessicaImage from "../assets/images/collaboration-partners/jessica-image.png";
 import DmytroImage from "../assets/images/collaboration-partners/dmytro-image.png";
+import { useTranslation } from "react-i18next";
 
 export const CollaborationPartners = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="profiles">
       <section className="profile-jessica">
@@ -11,9 +14,9 @@ export const CollaborationPartners = () => {
           loading="lazy"
         ></img>
         <div className="info-text">
-          <h1>Jessica Bräun</h1>
-          <h3>Dipl. Ing. (FH) Biotechnologie</h3>
-          <h3>Founder JHealthSolutions GmbHG</h3>
+          <h1>{t("collaboration-partners-page.jessica.name")}</h1>
+          <h3>{t("collaboration-partners-page.jessica.degree")}</h3>
+          <h3>{t("collaboration-partners-page.jessica.role")}</h3>
         </div>
       </section>
 
@@ -24,9 +27,9 @@ export const CollaborationPartners = () => {
           loading="lazy"
         ></img>
         <div className="info-text">
-          <h1>Dmytro Vakulenko</h1>
-          <h3>Prof. Dr. Biological Sciences</h3>
-          <h3>Founder Innovation in Medicine LLC</h3>
+          <h1>{t("collaboration-partners-page.dmytro.name")}</h1>
+          <h3>{t("collaboration-partners-page.dmytro.degree")}</h3>
+          <h3>{t("collaboration-partners-page.dmytro.role")}</h3>
         </div>
       </section>
     </div>
