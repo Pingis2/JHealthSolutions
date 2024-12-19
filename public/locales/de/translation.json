@@ -22,5 +22,25 @@
       "online_dispute": "Hinweis zur Online-Streitbeilegung (OS):<br>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr Unsere E-Mail-Adresse finden Sie oben im Impressum.",
       "disclaimer": "Haftungsausschluss (Disclaimer):<br>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen."
     }
+  },
+  "career-page": {
+    "image_overlay": "Teil des <br /> Teams",
+    "heading": "Werde Teil unseres innovativen Teams!",
+    "first_text": "Du möchtest die Zukunft aktiv mitgestalten und gemeinsam mit uns Großes erreichen? Dann bist du bei uns genau richtig! Wir suchen leidenschaftliche Mitstreiter, die mit uns neue Wege gehen. Sei dabei und bringe deine Expertise ein, um mit uns etwas Einzigartiges zu schaffen!",
+    "second_text": "Wir freuen uns über deine <strong>Initiativbewerbung</strong> in den Bereichen:",
+    "doctor_heading": "Mediziner (m/w/d):",
+    "doctor_list": {
+      "one": "Du bist Arzt oder Experte im medizinischen Bereich?",
+      "two": "Bringe dein Wissen ein, um unsere Vision für eine bessere Gesundheitsversorgung zu verwirklichen.",
+      "three": "Gemeinsam entwickeln wir innovative Lösungen für Patienten, Ärzte und die gesamte Branche."
+    },
+    "developer_heading": "Softwareentwicklung (m/w/d):",
+    "developer_list": {
+      "one": "Du liebst es, Code zu schreiben und komplexe Probleme zu lösen?",
+      "two": "Hilf uns dabei, modernste Technologien zu nutzen und digitale Produkte zu entwickeln, die das Leben verändern.",
+      "three": "Egal ob Backend, Frontend oder Fullstack - wir freuen uns auf deinen kreativen Input!"
+    },
+    "third_text": "So bewirbst du dich: <br /> Sende uns deine Initiativbewerbung mit Lebenslauf und einem kurzen Motivationsschreiben an <br /> jhealthsolutions.hd@gmail.com.",
+    "fourth_text": "Wir freuen uns darauf, dich kennenzulernen und gemeinsam Großes zu bewegen!"
   }
 }

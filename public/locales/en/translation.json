@@ -22,5 +22,25 @@
       "online_dispute": "Notice on Online Dispute Resolution (ODR):<br>The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr Our email address can be found above in the legal notice.",
       "disclaimer": "Disclaimer:<br>The content of our pages has been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content."
     }
+  },
+  "career-page": {
+    "image_overlay": "Be part of <br /> the team",
+    "heading": "Join our innovative team!",
+    "first_text": "Do you want to actively shape the future and achieve great things with us? Then you're in the right place! We're looking for passionate teammates who are ready to explore new paths with us. Join us and bring your expertise to create something unique together!",
+    "second_text": "We look forward to receiving your <strong>spontaneous application</strong> in the following areas:",
+    "doctor_heading": "Medical Professionals (m/f/d):",
+    "doctor_list": {
+      "one": "Are you a doctor or an expert in the medical field?",
+      "two": "Bring your knowledge to help realize our vision for better healthcare.",
+      "three": "Together, we will develop innovative solutions for patients, doctors, and the entire industry."
+    },
+    "developer_heading": "Software Development (m/f/d):",
+    "developer_list": {
+      "one": "Do you love writing code and solving complex problems?",
+      "two": "Help us use cutting-edge technologies and develop digital products that change lives.",
+      "three": "Whether it's backend, frontend, or fullstack - we're excited to have your creative input!"
+    },
+    "third_text": "How to apply: <br /> Send us your spontaneous application with your resume and a brief motivation letter to <br /> jhealthsolutions.hd@gmail.com.",
+    "fourth_text": "We look forward to getting to know you and making a big impact together!"
   }
 }
