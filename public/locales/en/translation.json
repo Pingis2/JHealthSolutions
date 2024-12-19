@@ -74,5 +74,14 @@
     "error-message": "Something went wrong, please try again later.",
     "info-headline": "AI-Powered Precision - for Diagnostics, Therapy Support, and Recovery",
     "info-text": "From early detection to rehabilitation - Innovation for sustainable health"
+  },
+  "privacy-page": {
+    "headline": "Privacy Policy",
+    "first-text": "We are pleased that you are interested in our website. The protection of your personal data is a matter of great concern to us. Below, we would like to inform you about how we handle your personal data when you use our website.",
+    "second-text": "1. Responsible Party Responsible for data processing on this website is:",
+    "third-text": "JHealthSolutions GmbH<br>Bussemergasse 4<br>69117 Heidelberg",
+    "fourth-text": "2. Collection and Use of Personal Data Our website is solely intended to provide information about our company and our services. We do not store any personal data unless you voluntarily provide it to us.<br>Contact: <br>If you contact us by email, phone, or through a contact form, we will use the data you provide (e.g., name, email address, phone number) solely for the purpose of processing your inquiry. This data will not be shared with third parties. Once your inquiry has been fully processed and there are no legal retention obligations, the data you have provided will be deleted.",
+    "fifth-text": "3. No Storage of Access Data<br>No personal data is automatically stored when you visit our website. We do not use cookies, tracking tools, or similar technologies.<br>4. Data Sharing<br>Your personal data will not be sold or shared with third parties by us.<br>5. Your Rights<br>You have the right to:<br>Obtain information about the personal data we process (Art. 15 GDPR),<br>Request the correction of incorrect data (Art. 16 GDPR),<br>Request the deletion of your data (Art. 17 GDPR),<br>Object to the processing of your data (Art. 21 GDPR),<br>Request a restriction on the processing (Art. 18 GDPR),<br>Withdraw your consent to data processing at any time (Art. 7(3) GDPR).<br>To exercise these rights, you can contact us at any time using the contact information provided above.<br>6. Changes to This Privacy Policy<br>We reserve the right to adjust this privacy policy as needed to reflect changes in legal requirements. The current version is available on our website at any time. As of: December, 2024",
+    "sixth-text": "Note: This privacy policy is drafted under German law and is tailored for websites that do not store data and only use personal data for contact purposes."
   }
 }
