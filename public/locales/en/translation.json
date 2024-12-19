@@ -9,5 +9,18 @@
     "contact": "Contact",
     "privacy": "Privacy Policy",
     "about-us": "About Us"
+  },
+  "about-us": {
+    "section1": {
+      "company_info": "Information according to § 5 TMG (Telemedia Act)<br>JHealthSolutions GmbHG<br>Bussemergasse 4<br>69117 Heidelberg",
+      "represented_by": "Represented by:<br>Jessica Bräun",
+      "contact_info": "Contact:<br>Email: jhealthsolution.HD@gmail.com<br>Registered in the Commercial Register.<br>Register Court: Mannheim<br>Register Number: HRB 752149<br>Tax Number: 35002/90412<br>VAT Identification Number according to § 27 a VAT Act: DE346601919",
+      "responsible_content": "Responsible for content according to § 55 Abs. 2 RStV:",
+      "responsible_person": "Jessica Bräun<br>Bussemergasse 4<br>69117 Heidelberg"
+    },
+    "section2": {
+      "online_dispute": "Notice on Online Dispute Resolution (ODR):<br>The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr Our email address can be found above in the legal notice.",
+      "disclaimer": "Disclaimer:<br>The content of our pages has been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content."
+    }
   }
 }

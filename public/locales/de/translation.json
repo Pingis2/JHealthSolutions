@@ -9,5 +9,18 @@
     "contact": "Kontakt",
     "privacy": "Datenschutz",
     "about-us": "Impressum"
+  },
+  "about-us": {
+    "section1": {
+      "company_info": "Angaben gemäß § 5 TMG (Telemediengesetz)<br>JHealthSolutions GmbHG<br>Bussemergasse 4<br>69117 Heidelberg",
+      "represented_by": "Vertreten durch:<br>Jessica Bräun",
+      "contact_info": "Kontakt:<br>E-Mail: jhealthsolution.HD@gmail.com<br>Eintragung im Handelsregister.<br>Registergericht: Mannheim<br>Registernummer: HRB 752149<br>Steuernummer: 35002/90412<br>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE346601919",
+      "responsible_content": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
+      "responsible_person": "Jessica Bräun<br>Bussemergasse 4<br>69117 Heidelberg"
+    },
+    "section2": {
+      "online_dispute": "Hinweis zur Online-Streitbeilegung (OS):<br>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr Unsere E-Mail-Adresse finden Sie oben im Impressum.",
+      "disclaimer": "Haftungsausschluss (Disclaimer):<br>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen."
+    }
   }
 }
