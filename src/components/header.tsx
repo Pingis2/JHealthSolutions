@@ -18,12 +18,12 @@ export const Header = () => {
 
   const pageNameMapping: { [key: string]: string } = {
     "/": "Home",
-    "/science-technology": "Science & Technology",
-    "/collaboration-partners": "Collaboration Partners",
-    "/career": "Karriere",
-    "/about-us": "Impressum",
-    "/privacy": "Datenschutz",
-    "/contact": "Kontakt",
+    "/science-technology": "science-technology",
+    "/collaboration-partners": "collaboration-partners",
+    "/career": "career",
+    "/about-us": "about_us",
+    "/privacy": "privacy",
+    "/contact": "contact",
   };
 
   useEffect(() => {
@@ -53,13 +53,14 @@ export const Header = () => {
 
   useEffect(() => {
     const currentPath = location.pathname;
+    const pageKey = pageNameMapping[currentPath];
 
-    if (currentPath in pageNameMapping) {
-      setPageName(pageNameMapping[currentPath as keyof typeof pageNameMapping]);
+    if (pageKey) {
+      setPageName(t(pageKey));
     } else {
       setPageName("Page Not Found");
     }
-  }, [location]);
+  }, [location, i18n.language, t]);
 
   return (
     <>
