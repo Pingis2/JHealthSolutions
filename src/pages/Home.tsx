@@ -1,7 +1,10 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 export const Home = () => {
+  const { t } = useTranslation();
+
   const [isFormVisible, setIsFormVisible] = useState(false);
 
   const toggleFormVisibility = () => {
@@ -21,28 +24,25 @@ export const Home = () => {
       .then(
         (result) => {
           console.log("E-Mail send", result.text);
-          alert("Thank you for your message! We will return soon.");
+          alert(t("home-page.thank-you-message"));
           event.currentTarget.reset();
         },
         (error) => {
           console.error("Error while sending email", error.text);
-          alert("Something went wrong, please try again later.");
+          alert(t("home-page.error-message"));
         }
       );
   };
 
   return (
     <div className="home-container">
-
       <section className="image-section">
         <div className="text-box-image">
-          <h2>Gemeinsam die Zukunft der Medizin gestalten!</h2>
-          <p>Sie sind Arzt, Sportmediziner oder eine Klinik?</p>
-          <p className="second-text-box-image">
-            Testen Sie unser System und teilen Sie Ihre Erfahrungen!
-          </p>
+          <h2>{t("home-page.headline")}</h2>
+          <p>{t("home-page.intro-text")}</p>
+          <p className="second-text-box-image">{t("home-page.cta-text")}</p>
           <button className="contact-button" onClick={toggleFormVisibility}>
-            Kontaktaufnehmen
+            {t("home-page.contact-button")}
           </button>
 
           {isFormVisible && (
@@ -51,24 +51,24 @@ export const Home = () => {
                 <button className="close-button" onClick={toggleFormVisibility}>
                   &times;
                 </button>
-                <h3>Kontaktaufnehmen</h3>
+                <h3>{t("home-page.modal-title")}</h3>
                 <form onSubmit={handleSubmit}>
                   <label className="label">
-                    Name:
+                    {t("home-page.name-label")}
                     <input type="text" name="from_name" required />
                   </label>
                   <br />
                   <label className="label">
-                    E-Mail:
+                    {t("home-page.email-label")}
                     <input type="email" name="from_email" required />
                   </label>
                   <br />
                   <label className="label">
-                    Nachricht:
+                    {t("home-page.message-label")}
                     <textarea name="message" required />
                   </label>
                   <button className="submit-button" type="submit">
-                    Senden
+                    {t("home-page.submit-button")}
                   </button>
                 </form>
               </div>
@@ -78,14 +78,8 @@ export const Home = () => {
       </section>
 
       <section className="text-info-section">
-        <h2>
-          KI-gestützte Präzision - für Diagnostik, Therapieunterstützung und
-          Genesung
-        </h2>
-        <p>
-          Von der Früherkennung bis zur Rehabilitation - Innovation für
-          nachhaltige Gesundheit
-        </p>
+        <h2>{t("home-page.info-headline")}</h2>
+        <p>{t("home-page.info-text")}</p>
       </section>
     </div>
   );

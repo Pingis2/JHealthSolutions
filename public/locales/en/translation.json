@@ -59,5 +59,20 @@
     "contact": "Contact",
     "send-email": "Please send us your message at",
     "email": "jhealthsolutions.hd@gmail.com"
+  },
+  "home-page": {
+    "headline": "Shaping the Future of Medicine Together!",
+    "intro-text": "Are you a doctor, sports physician, or a clinic?",
+    "cta-text": "Test our system and share your experiences!",
+    "contact-button": "Get in Touch",
+    "modal-title": "Get in Touch",
+    "name-label": "Name:",
+    "email-label": "E-Mail:",
+    "message-label": "Message:",
+    "submit-button": "Send",
+    "thank-you-message": "Thank you for your message! We will get back to you soon.",
+    "error-message": "Something went wrong, please try again later.",
+    "info-headline": "AI-Powered Precision - for Diagnostics, Therapy Support, and Recovery",
+    "info-text": "From early detection to rehabilitation - Innovation for sustainable health"
   }
 }

@@ -59,5 +59,20 @@
     "contact": "Kontakt",
     "send-email": "Bitte senden Sie uns Ihre Nachricht an",
     "email": "jhealthsolutions.hd@gmail.com"
+  },
+  "home-page": {
+    "headline": "Gemeinsam die Zukunft der Medizin gestalten!",
+    "intro-text": "Sie sind Arzt, Sportmediziner oder eine Klinik?",
+    "cta-text": "Testen Sie unser System und teilen Sie Ihre Erfahrungen!",
+    "contact-button": "Kontaktaufnehmen",
+    "modal-title": "Kontaktaufnehmen",
+    "name-label": "Name:",
+    "email-label": "E-Mail:",
+    "message-label": "Nachricht:",
+    "submit-button": "Senden",
+    "thank-you-message": "Danke für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
+    "error-message": "Etwas ist schiefgelaufen, bitte versuchen Sie es später erneut.",
+    "info-headline": "KI-gestützte Präzision - für Diagnostik, Therapieunterstützung und Genesung",
+    "info-text": "Von der Früherkennung bis zur Rehabilitation - Innovation für nachhaltige Gesundheit"
   }
 }
