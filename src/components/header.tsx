@@ -22,7 +22,7 @@ export const Header = () => {
     "/collaboration-partners": "Collaboration Partners",
     "/career": "Karriere",
     "/about-us": "Impressum",
-    "/privacy": "Datebschutz",
+    "/privacy": "Datenschutz",
     "/contact": "Kontakt",
   };
 

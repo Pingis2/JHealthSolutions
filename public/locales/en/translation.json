@@ -1,8 +1,13 @@
 {
-    "learn": "Learn React",
-    "description": "Edit <1>src/App.js</1> and save to reload.",
-    "science-technology": "Science & Technology",
-    "collaboration-partners": "Collaboration Partners",
-    "career": "Career",
-    "contact": "Contact"
+  "learn": "Learn React",
+  "description": "Edit <1>src/App.js</1> and save to reload.",
+  "science-technology": "Science & Technology",
+  "collaboration-partners": "Collaboration Partners",
+  "career": "Career",
+  "contact": "Contact",
+  "footer": {
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "about-us": "About Us"
+  }
 }
