@@ -1,22 +1,35 @@
 @media (min-width: 1024px) {
-  .home-header {
-    .header-left {
+
+  .science-technology-container {
+    flex-direction: row;
+
+    .text-info-section {
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
       p {
-        margin-left: 35px;
+        font-size: 1rem;
       }
     }
 
-    .header-right {
-      p {
-        margin-right: 35px;
+    .image-container {
+      width: auto;
+      height: auto;
+
+      .science-technology-image {
+        width: auto;
+        height: 400px;
       }
-    }
-  }
-
-  .image-container {
-
-    .science-technology-image {
-    
     }
   }
 }
