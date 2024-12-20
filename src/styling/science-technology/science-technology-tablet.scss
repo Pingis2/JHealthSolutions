@@ -1,17 +1,50 @@
-@media (min-width: 840px) {
-  .home-header {
-    .header-left {
-      p {
-        margin-left: 25px;
-        font-size: 1.1rem;
+@use "../mixins/fonts.scss" as *;
+@use "../mixins/colors.scss" as *;
+
+@media (min-width: 768px) {
+  .science-technology-container {
+    
+    .image-container {
+      display: flex;
+      margin: 20px auto 0 auto;
+      width: 80%;
+      height: auto;
+  
+      .science-technology-image {
+        width: 100%;
+        height: auto;
       }
     }
-
-    .header-right {
+    .text-info-section {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      @include main-sans-font;
+      text-align: left;
+  
+      h2 {
+        color: #737373;
+        text-align: center;
+        font-size: 2rem;
+      }
+  
+      h3 {
+        margin: 0 0 0 20px;
+        color: #545454;
+        font-size: 1.7rem;
+      }
+  
+      h4 {
+        margin: 10px 0 0 30px;
+        color: #737373;
+        font-size: 1.4rem;
+      }
+  
       p {
-        margin-right: 25px;
-        font-size: 1.1rem;
+        color: #737373;
+        font-size: 1.2rem;
       }
     }
   }
+  
 }
