@@ -47,7 +47,7 @@ export const ScienceTechnology = () => {
           <h2>
             {t("science-technology-page.headline")}
           </h2>
-          <section className="operating-principle">
+          <article className="operating-principle">
             <h3>{t("science-technology-page.operating-principle.headline")}</h3>
             <ul>
               <li>
@@ -63,9 +63,9 @@ export const ScienceTechnology = () => {
                 <p>{t("science-technology-page.operating-principle.phase-4")}</p>
               </li>
               </ul>
-          </section>
+          </article>
 
-          <section className="technology">
+          <article className="technology">
             <h3>{t("science-technology-page.technology.headline")}</h3>
 
             <h4>{t("science-technology-page.technology.first-text.headline")}</h4>
@@ -97,7 +97,7 @@ export const ScienceTechnology = () => {
               </li>
             </ul>
 
-          </section>
+          </article>
           
         </section>
       </div>
