@@ -157,8 +157,11 @@ PS, you have to add it in both the english and german JSON file for the language
 
 ### Small reminders
 
-To publish (commit) your new edits, you click on the "Source Control" (far left of the screen), write a little message, for example: edited home page headline text, and then you click commit and then 
+To publish (commit) your new edits, you click on the "Source Control" (far left of the screen), write a little message, for example: edited home page headline text, and then you click commit and then the button will change to "Sync changes" and you click that again for it to be added to Github and then be published on Vercel.
 
-If you encounter problems, feel free to send an email to Anton or Oscar.
+If you accidentally were to delete something and you don't know how to fix it, you can discard all the changes in that file by clicking on "source control" and then the down curved arrow.
+![small image of "discard changes" button](image.png)
+
+If you encounter any problems, feel free to send an email to Anton or Oscar.
 
 Good luck!
