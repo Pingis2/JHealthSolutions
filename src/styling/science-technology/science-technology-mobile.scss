@@ -10,10 +10,46 @@
     margin-top: 20px;
     width: 100%;
     height: auto;
+    flex-direction: column;
 
     .science-technology-image {
       width: 100%;
       height: auto;
+    }
+
+    .small-image-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 30px 0 0 0;
+
+      .arrow {
+        margin: auto 0 auto 0;
+
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .image-text-wrapper {
+        width: 100%;
+        height: auto;
+        @include main-sans-font;
+        font-size: 1.2rem;
+        text-align: center;
+
+        img {
+          width: auto;
+          height: 70px;
+        }
+
+        h4 {
+          width: auto;
+          margin: 0 0 10px 0;
+          font-size: 1rem;
+        }
+      }
     }
   }
 
