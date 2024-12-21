@@ -110,6 +110,11 @@
         "text-5": "Automated analysis and recommendations.",
         "text-6": "Integration with mobile and web-based platforms."
       }
+    },
+    "data-analysis-process": {
+      "measurement": "Measurement",
+      "data-transfer": "Transfer",
+      "data-analysis": "Analysis"
     }
   }
 }
